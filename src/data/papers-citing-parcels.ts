@@ -2549,6 +2549,16 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Distribution and climatological trajectories of plastic debris released from the major rivers along the east coast of India using the Lagrangian particle tracking model',
+    published_info: 'Environmental Monitoring and Assessment, 197, 1193',
+    authors:
+      'Raju, MP, V Suneel, S Veerasingam, P Suneetha, SSV Siva RamaKrishna (2025)',
+    doi: 'https://doi.org/10.1007/s10661-025-14670-7',
+    abstract:
+      'Marine plastic pollution predominantly originates from rivers, yet the extent of its return to shorelines remains uncertain. This study employs a Lagrangian particle tracking model to simulate the trajectories of plastic debris discharged from the Ganges, Brahmaputra, Godavari, and Krishna rivers along India’s east coast. Seasonal simulations were conducted for four periods pNEM (January–February), PreM (March–May), SWM (June–September), and NEM (October–December) using windage factors of 1%, 3%, and 5% to represent various plastic particle types. Results indicate that the highest deposition of riverine plastic occurs along the east coast of India during NEM (28.2–30%), highlighting its vulnerability to plastic accumulation. Increased windage led to greater deposition, underscoring the role of wind-driven transport. Krishna and Godavari rivers exhibited peak deposition (46% and 42%) during PreM, while the Ganges contributed ~ 42% during NEM. The Brahmaputra had the lowest deposition rates. Ocean currents transported plastic from the Godavari and Krishna rivers northward during PreM and SWM, while winds and Stokes drift pushed Ganges and Brahmaputra particles southwestward in pNEM and NEM. These findings emphasize seasonal variations in plastic transport and inform coastal management strategies to mitigate pollution along the east coast of India.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
