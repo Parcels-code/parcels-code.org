@@ -2559,6 +2559,16 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Quantifying variability in Lagrangian particle dispersal in ocean ensemble simulations: an information theory approach',
+    published_info: 'Nonlinear Processes in Geophysics, 32, 411-438',
+    authors:
+      'Pierard, CM, S Rühs, L Gómez-Navarro, MC Denes, F Meirer, T Penduff, E van Sebille (2025)',
+    doi: 'https://doi.org/10.5194/npg-32-411-2025',
+    abstract:
+      'Ensemble Lagrangian simulations aim to capture the full range of possible outcomes for particle dispersal. However, single-member Lagrangian simulations are most commonly available and only provide a subset of the possible particle dispersal outcomes. This study explores how to generate the variability inherent in Lagrangian ensemble simulations by creating variability in a single-member simulation. To obtain a reference for comparison, we performed ensemble Lagrangian simulations by advecting the particles from the surface of the Gulf Stream, around 35.61° N, 73.61° W, in each member to obtain trajectories capturing the variability of the full 50-member ensemble. Subsequently, we performed single-member simulations with spatially and temporally varying release strategies to generate comparable trajectory variability and dispersal and also with adding Brownian motion diffusion to the advection. We studied how these strategies affected the number of surface particles connecting the Gulf Stream with the eastern side of the subtropical gyre. We used an information theory approach to define and compare the variability in the ensemble with the single-member strategies. We defined the variability as the marginal entropy or average information content of the probability distributions of the position of the particles. We calculated the relative entropy to quantify the uncertainty of representing the full-ensemble variability with single-member simulations. We found that release periods of 12 to 20 weeks most effectively captured the full ensemble variability, while spatial releases with a 2.0° radius resulted in the closest match at timescales shorter than 10 d. We found that adding relatively high amounts of Brownian motion diffusion (Kh=1000 m2 s−1) captures the entropy aspects of the full ensemble variability well but leads to an overestimation of connectivity. Our findings provide insights to improve the representation of variability in particle trajectories and define a framework for uncertainty quantification in Lagrangian ocean analysis.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
