@@ -51,7 +51,7 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     name: 'Reint Fischer',
     position: 'Research software support',
     description:
-      'Nick supports Parcels users and develops tutorials to facilitate their onboarding.',
+      'Reint supports Parcels users and develops tutorials to facilitate their onboarding.',
     image: 'utrecht-team/ReintFischer.jpeg',
   },
   {
