@@ -2569,6 +2569,26 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      "Physalia mikazuki sp. nov. (Phylum Cnidaria; class Hydrozoa) blown into Japan's northeast (Tohoku) at the whim of marine ecosystem change",
+    published_info: 'Frontiers in Marine Science, 12',
+    authors:
+      'Yongstar, C, Y Ochiai, MI Nugraha, KC Tan, A Totsu, W Sato-Okoshi, CL Ames (2025)',
+    doi: 'https://doi.org/10.3389/fmars.2025.1653958',
+    abstract:
+      'The discovery of Physalia mikazuki sp. nov. from the temperate waters of Gamo Beach, Sendai Bay (Miyagi Prefecture) in the Tohoku (northeast) region of Japan, represents a significant addition to the taxonomic and ecological understanding of this genus. Morphological analysis reveals key diagnostic traits, distinguishing it from all known Physalia species. Phylogenetic analyses of the 16S rRNA gene and COI (cytochrome c oxidase subunit 1) regions further confirm its classification as a distinct species, forming a well-supported monophyletic clade separate from other Physalia species. Oceanographic data and Lagrangian particle trajectory simulations suggest that P. mikazuki may have dispersed northward via the recent 100 km northward extension of the Kuroshio Current (KE) in tandem with record-breaking sea surface temperature changes (SST) of more than 2°C in the Tohoku region between 2022 and 2024. Long-term monitoring confirmed no previous reports of Physalia at the type locality of Gamo Beach, Sendai City (Tohoku) prior to 2023, indicating a likely recent introduction. Molecular barcode sequences matching samples from both Pakistan and Mexico indicate a broad Indo-Pacific connectivity for the new species. The occurrence of P. mikazuki sp. nov. in the Tohoku region poses potential ecological and public health concerns, particularly due to its predation on fish larvae and risk of envenomation during beach recreation. This study underscores the importance of integrative experimental design combining taxonomy, molecular data, and oceanographic modeling to understand species range shifts and cryptic diversity in a changing ocean.',
+  },
+  {
+    title:
+      'Differences in connectivity and transport of Toxoplasma gondii in marine environments due to sensitivity in model setup',
+    published_info: 'Marine Ecology Progress Series, 772, 103-122',
+    authors:
+      'Wong-Ala, JATK, JLK Wren, SJ Robinson, M Barbieri, RR Rykaczewski, DR Kobayashi, L Ciannelli (2025)',
+    doi: 'https://doi.org/10.3354/meps14967',
+    abstract:
+      'Terrestrial parasites enter marine habitats through freshwater runoff, posing a threat to marine mammals. Toxoplasmosis, caused by Toxoplasma gondii, causes 40% of adult female Hawaiian monk seal (HMS) mortalities in the main Hawaiian Islands (MHI). While HMS infection occurs through consuming infected prey or seawater, oocyst transport in marine settings remains poorly understood. This study is the first to characterize T. gondii oocyst connectivity and transport in Hawaiian waters, emphasizing how ocean conditions influence oocyst distribution. We employed a particle tracking model with the Regional Ocean Modeling System (ROMS), comparing 2 configurations—unnested ocean model with coarse horizontal resolution (4 km), and nested (200 m) setup utilizing ocean currents in a specific region at finer horizontal resolution—to evaluate the impact of ocean model resolution on oocyst transport. Two particle input scenarios were tested: constant and variable, with the latter based on output from an oocyst hydrological model for O‘ahu. ROMS grid resolution had a greater impact on connectivity than initial particle input, indicating that finer ocean models simulate reduced connectivity and increased retention in nested simulations by capturing complex bathymetry and local physical conditions. We observed consistent retention for all islands and simulations, with limited connectivity between Ni‘ihau, Kaua‘i, and other MHI, suggesting local infection sources. Potential high accumulation areas include west Kaua‘i and east, south, and southwest O‘ahu, driven by interannual wind and associated eddy variability and steep nearshore bathymetry. This research highlights the role of particle transport models in evaluating parasite distributions and aiding marine mammal conservation.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
