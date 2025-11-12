@@ -92,6 +92,13 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/EsmeevanAmelsfort.jpeg',
   },
   {
+    name: 'Arjen van Mullem',
+    position: 'MSc student',
+    description:
+      'Arjen explores how to use Machine Learning to analyse Lagrangian particle trajectories.',
+    image: 'utrecht-team/ArjenvanMullem.jpg',
+  },
+  {
     name: 'Erik van Sebille',
     position: 'Professor',
     description:
