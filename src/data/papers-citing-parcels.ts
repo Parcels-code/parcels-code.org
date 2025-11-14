@@ -2589,6 +2589,16 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Generation of Fine-Scale Thermohaline Variability in the Antarctic Circumpolar Current',
+    published_info: 'Journal of Physical Oceanography, 55, 2245–2268',
+    authors:
+      'Jakes, MI, HE Phillips, A Foppert, NL Bindoff, KL Polzin, J Wyatt, SR Rintoul, Y-T Tranchant (2025)',
+    doi: 'https://doi.org/10.1175/JPO-D-25-0061.1',
+    abstract:
+      'Vertical profiles of temperature T and salinity S in the ocean commonly exhibit fine-scale variability in the form of interleaving, with cold and fresh layers in between warm and salty. These features are widespread in the Southern Ocean, particularly in the Polar Front Zone of the Antarctic Circumpolar Current (ACC) and in energetic regions downstream of complex topography. Interleaving is a signature of cross-frontal exchange—with potentially significant contributions to poleward heat transport, mixing, and water mass transformation in the frontal regions. With typical time scales on the order of days and vertical scales of O(10) m in the upper 1000 m of the ACC, interleaving features are not captured in global climate models and their generation mechanism remains unclear. Motivated by in situ observations of thermohaline interleaving in the Southern Ocean, we use a Lagrangian particle-tracking approach to demonstrate the generation of interleaving features by isopycnal stirring and chaotic advection. Particles are advected backward-in-time along-isopycnal surfaces, using realistic gradient wind velocities from SatGEM-2—a full-depth time-evolving representation of Southern Ocean T–S and velocity fields, constructed from observations. With the addition of small-scale perturbations to the velocity field, accounting for unresolved motions, interleaving features develop on time scales of <10 days in the energetic meander regions of the ACC—highlighting the importance of small-scale processes in reproducing the observed variability. While characteristics of the large-scale thermohaline and velocity field are important, we show how transient features of the flow field cause particle dispersion and mediate cross-frontal exchange processes within the energetic meanders.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
