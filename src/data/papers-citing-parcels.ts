@@ -2590,12 +2590,30 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Generation of Fine-Scale Thermohaline Variability in the Antarctic Circumpolar Current',
-    published_info: 'Journal of Physical Oceanography, 55, 2245–2268',
+    published_info: 'Journal of Physical Oceanography, 55, 2245-2268',
     authors:
       'Jakes, MI, HE Phillips, A Foppert, NL Bindoff, KL Polzin, J Wyatt, SR Rintoul, Y-T Tranchant (2025)',
     doi: 'https://doi.org/10.1175/JPO-D-25-0061.1',
     abstract:
       'Vertical profiles of temperature T and salinity S in the ocean commonly exhibit fine-scale variability in the form of interleaving, with cold and fresh layers in between warm and salty. These features are widespread in the Southern Ocean, particularly in the Polar Front Zone of the Antarctic Circumpolar Current (ACC) and in energetic regions downstream of complex topography. Interleaving is a signature of cross-frontal exchange—with potentially significant contributions to poleward heat transport, mixing, and water mass transformation in the frontal regions. With typical time scales on the order of days and vertical scales of O(10) m in the upper 1000 m of the ACC, interleaving features are not captured in global climate models and their generation mechanism remains unclear. Motivated by in situ observations of thermohaline interleaving in the Southern Ocean, we use a Lagrangian particle-tracking approach to demonstrate the generation of interleaving features by isopycnal stirring and chaotic advection. Particles are advected backward-in-time along-isopycnal surfaces, using realistic gradient wind velocities from SatGEM-2—a full-depth time-evolving representation of Southern Ocean T–S and velocity fields, constructed from observations. With the addition of small-scale perturbations to the velocity field, accounting for unresolved motions, interleaving features develop on time scales of <10 days in the energetic meander regions of the ACC—highlighting the importance of small-scale processes in reproducing the observed variability. While characteristics of the large-scale thermohaline and velocity field are important, we show how transient features of the flow field cause particle dispersion and mediate cross-frontal exchange processes within the energetic meanders.',
+  },
+  {
+    title:
+      'A high-density multi-species bivalve spawning event in the southern Chukchi Sea',
+    published_info: 'Marine Ecology Progress Series, 773, 43-59',
+    authors:
+      'Fachon, E, KR Schrage, LS Lago, M Pathare, SM Lim, C Goethel (2025)',
+    doi: 'https://doi.org/10.3354/meps14981',
+    abstract:
+      'The Pacific Arctic region (PAR) is characterized by high productivity and strong benthic-pelagic coupling, supporting abundant benthic communities. In addition to food availability, persistence of benthic populations is shaped by larval transport and recruitment along the advective pathways which connect patchy benthic hotspots. Here, we describe a chance encounter with an extensive bivalve spawning event on the southeastern Chukchi shelf, initially detected using a shipboard Imaging FlowCytobot in July 2023 and confirmed with discrete sampling. Using integrated taxonomy, larval morphotypes were identified as 2 distinct taxa: Macoma calcarea (trochophores and veligers) and Mya sp. (D shells), both of which are key members of the PAR food web. Larval presence was strongly associated with Bering Summer Water, and morphotypes exhibited vertical partitioning through the water column consistent with behavioral differences across life stages. Densities of both species were orders of magnitude higher than typically recorded in the region (11550 M. calcarea l-1 and 5750 Mya sp. l-1), indicating a proximal source population and likely a coordinated spawning event. Benthic biomass data from the southern Chukchi shelf confirm the presence of adult populations of both species. A reverse particle advection model was used to validate this source location, and a forward particle advection projected the dispersal pathway of the larvae, revealing that they likely settled northwest near Herald Shoal. This interdisciplinary approach provides new insight into population connectivity and life history dynamics of both species, as well as general pathways of larval transport in Arctic waters.',
+  },
+  {
+    title: 'Lagrangian fluid transport simulation using mobile devices',
+    published_info: 'Simulation Modelling Practice and Theory, 145, 103214',
+    authors: 'Opat, M, J Koellermeier, C Kehl (2025)',
+    doi: 'https://doi.org/10.1016/j.simpat.2025.103214',
+    abstract:
+      'Simulating the transport of plastics, nutrients and pollutants in the ocean is important to address societal questions in environmental management and sustainability. Many Lagrangian transport simulators have been introduced in the past decades, yet they all share two distinct limitations, namely, long compute times and reliance on large compute equipment. These limitations hinder a transient incorporation of outdoor observations for Lagrangian physical simulations. This paper introduces a novel particle advection approach for Lagrangian ocean transport simulations, specifically designed for mobile devices and field use. A proof-of-concept for particle advection via 4th order Runge–Kutta time integration is presented and validated across different datasets. The approach is parallelized for SIMD architectures on mobile platforms. The results demonstrate a time-integration of 500,000 particles in approximately 10.2 ms per timestep, enabling an interactive co-visualization of the simulation. Achieved runtimes on mobile devices are within the same order of magnitude as established non-portable Lagrangian ocean-transport simulators, such as TRACMASS and OceanParcels, with comparable scalability. Consequently, this novel simulation approach opens new possibilities for field-conducted simulations in the future.',
   },
   {
     title:
