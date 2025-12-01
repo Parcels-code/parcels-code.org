@@ -2617,6 +2617,36 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Seamount larval dispersal networks: A potential strategy for conserving ecological connectivity from deep-sea mining',
+    published_info: 'Ecological Applications, 35, e70086',
+    authors:
+      'Saito, N, H Kise, TW Washburn, E Ikeuchi, A Iguchi, H Kamoshida, A Suzuki (2025)',
+    doi: 'https://doi.org/10.1002/eap.70086',
+    abstract:
+      'Seamounts are unique habitats in the deep sea facing anthropogenic stressors, including future deep-sea mining. To conserve patchy marine habitats such as seamounts, it is critical to design conservation area networks that maintain connectivity by larval dispersal. This study conducted biophysical modeling to quantify larval dispersal among 18 seamounts in the Northwest Pacific, within the scope of a regional environmental management plan for mining under development by the International Seabed Authority. Seamounts formed a single dispersal network, but excluding seamounts with mining potential showed the network could become fragmented. Two seamounts whose mining potential was relinquished in 2024 were identified as key stepping stones, suggesting that environmental conservation at these two seamounts can contribute to maintaining a single dispersal network. Predominant eastward or westward currents, likely related to the North Equatorial Intermediate Current, made the upstream, distant seamounts vital larval sources. Trajectories of Argo floats and gene flows of amphipods provided physical and biological support for the modeled dispersal. This study highlights the potential for effective conservation area placement based on a seamount network connected by upstream-based larval dispersal.',
+  },
+  {
+    title:
+      'Tracing the sources of floating plastic in Romanian waters under changing regional pressures through backtracking modeling',
+    published_info: 'Science of The Total Environment, 1008, 181035',
+    authors:
+      'Castro-Rosero, LM, I Hernandez, M Liste, JM Alsina, M Espino, I Pojar, D Vasiliu (2025)',
+    doi: 'https://doi.org/10.1016/j.scitotenv.2025.181035',
+    abstract:
+      'This study presents an integrated assessment of floating marine macro litter (FMML) distribution and transport in the western Black Sea, based on visual observations conducted during a research cruise in July 2024. Eight transects were surveyed along the Romanian coast, revealing a marked contrast between coastal and offshore FMML densities. While nearshore stations showed relatively low concentrations, offshore transects beyond the Northwestern Shelf (NWS) exhibited densities exceeding 9000 items/km, primarily due to the presence of elongated white plastic strips. Lagrangian backtracking simulations using the LOCATE model identified distinct origin pathways: coastal FMML was linked to riverine systems such as the Danube, Dniester, and Dnieper-Bug, whereas offshore litter appeared to originate near the Crimean Peninsula. Persistent mesoscale cyclonic activity, revealed through analysis of the  parameter, was found to create convergence zones that facilitate debris accumulation, with one particularly stable gyre located near 32°E and 44°N. These findings suggest the influence of both natural circulation and conflict-driven inputs on FMML distribution. The combined use of observational surveys, transport modeling, and circulation patterns offers a replicable framework for marine litter monitoring and supports science-based management strategies under evolving environmental and geopolitical conditions.',
+  },
+  {
+    title:
+      'Major-Minor-Trace Element Analyses and Oceanographic Modeling Confirms Circumpolar Transport of the 1962 Protector Shoal Pumice Raft',
+    published_info: 'Journal of Geophysical Research, 130, e2025JC022827',
+    authors:
+      'Monteath, AJ, EF Young, HRS Dawson, BJL Jensen, JL Smellie, CJ Manning, TR Riley, TA Jordan, SJ Roberts (2025)',
+    doi: 'https://doi.org/10.1029/2025JC022827',
+    abstract:
+      'Pumice rafts derived from submarine eruptions can remain afloat for months or even years, traveling thousands of kilometers on ocean currents. These natural phenomena disperse marine organisms and provide important evidence for submarine volcanism yet are not fully understood. Here, we describe pumice clasts from Falkland Islands shorelines and use major-minor-trace element analyses to trace their provenance to the 1962 volcanic eruption on Protector Shoal, a large seamount in the South Sandwich Islands, Scotia Sea. Compositional variability between rafted and dredged pumice from Protector Shoal suggests eruptions have varied from explosive to non- or mildly explosive (the latter from lava domes and during neptunian events) and the seamount is volcanically diverse. Oceanographic modeling simulations and historical observations show that clasts from the 1962 eruption reached the Falkland Islands via the Antarctic Circumpolar Current, a journey of ∼20,000 km that took approximately three years. Although oceanographic variability strongly affects modeled transport pathways, in all simulations particles consistently reach the Falkland Islands from Protector Shoal seamount, suggesting a persistent long-distance connection. The results highlight the potential for pumice rafting to disperse non-native, potentially invasive, marine organisms throughout the Southern Ocean as climate warms.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
