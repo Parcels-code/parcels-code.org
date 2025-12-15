@@ -2693,6 +2693,17 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Carbonate System Site Selection Characteristics for Ocean Alkalinity Enhancement in the US Northeast Shelf and Slope',
+    published_info:
+      'Journal of Geophysical Research: Biogeosciences, 130, e2025JG009063',
+    authors:
+      'Rheuban, JE, HH Kim, K Chen, ID Lima, DC McCorkle, APM Michel, Z Aleck Wang, AV Subhas (2025)',
+    doi: 'https://doi.org/10.1029/2025JG009063',
+    abstract:
+      'Ocean alkalinity enhancement (OAE) is a marine carbon dioxide (CO2) removal strategy that relies on lowering the oceans pCO2 via the addition of alkaline materials to facilitate enhanced CO2 uptake with the potential for durable, long-term, storage. This strategy has gained recent scientific and private sector attention as a possible component of climate mitigation portfolios, yet many research questions remain. This work describes an analysis of historical reconstructions of regional carbonate chemistry developed via application of machine learning algorithms to an ocean reanalysis product. Model skill assessment demonstrated excellent performance when compared to regional observations, and this work focuses on four carbonate system variables that may influence OAE applications: total scale pH, calcite saturation state, the theoretical molar change in dissolved inorganic carbon associated with a molar change in total alkalinity (ΔDIC/ΔTA), and the timescale of CO2 equilibrium of the surface mixed layer (). These metrics were combined into a suitability index to quantify locations and times of year more favorable for OAE. Much of the US Northeast Shelf and Slope region has seasonally similar suitability for small-scale OAE applications, with nearshore environments exhibiting high suitability year-round. Lagrangian particle tracking experiments show strong reductions in ΔDIC/ΔTA and increases in  due to horizontal and vertical transport, suggesting that when water motion is accounted for, reduced efficiency and longer equilibration times may impact successful observations of carbon uptake and storage. This analysis and framework were developed with publicly available tools, data sets, and global data products allowing for global scalability and application.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
