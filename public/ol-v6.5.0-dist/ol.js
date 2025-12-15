@@ -5663,7 +5663,6 @@
                 for (
                   var g = (t.pathname || '').split('/');
                   g.length && !(t.host = g.shift());
-
                 );
                 ;(t.host || (t.host = ''),
                   t.hostname || (t.hostname = ''),
@@ -11574,7 +11573,6 @@
             for (
               var r, n, o, a = this.data, s = this.toBBox(t), l = [], u = [];
               a || l.length;
-
             ) {
               if (
                 (a ||
@@ -11678,7 +11676,6 @@
             for (
               o.children.push(t), s(o, n);
               e >= 0 && i[e].children.length > this._maxEntries;
-
             )
               (this._split(i, e), e--)
             this._adjustParentBBoxes(n, i, e)
@@ -12274,7 +12271,7 @@
             ? (function (t, e) {
                 var r, n
                 t >= 0
-                  ? ((r = t % 4294967296 | 0), (n = (t / 4294967296) | 0))
+                  ? ((r = (t % 4294967296) | 0), (n = (t / 4294967296) | 0))
                   : ((n = ~(-t / 4294967296)),
                     4294967295 ^ (r = ~(-t % 4294967296))
                       ? (r = (r + 1) | 0)
@@ -19524,7 +19521,6 @@
                   o = r[t],
                   a = t;
                 t < n >> 1;
-
               ) {
                 var s = this.getLeftChildIndex_(t),
                   l = this.getRightChildIndex_(t),
@@ -19540,7 +19536,6 @@
                   i = r[e],
                   o = n[e];
                 e > t;
-
               ) {
                 var a = this.getParentIndex_(e)
                 if (!(n[a] > o)) break
@@ -19635,7 +19630,6 @@
               for (
                 var r, n, i = 0;
                 this.tilesLoading_ < t && i < e && this.getCount() > 0;
-
               )
                 ((n = (r = this.dequeue()[0]).getKey()),
                   r.getState() !== Ji ||
@@ -24743,7 +24737,6 @@
                   ? ((i = t[1]), (o = t[2]))
                   : (a = this.getTileCoordExtent(t, n));
                 s >= this.minZoom;
-
               ) {
                 if (
                   e(
@@ -32701,7 +32694,6 @@
               for (
                 this._queue.push(t);
                 this._queue.length > this._maxQueueLength;
-
               )
                 this._queue.shift().callback(null, null)
             }),
@@ -36109,7 +36101,6 @@
             S = m,
             E = o + s * l(u, i, c);
           e < r - n && m + y < E;
-
         )
           v()
         var T,
@@ -36485,7 +36476,6 @@
                   },
                   N = this.instructions != n || this.overlaps ? 0 : 200;
                 C < O;
-
               ) {
                 var D = n[C]
                 switch (D[0]) {
@@ -37244,7 +37234,6 @@
                       for (
                         var d = s[0], g = Pe(f), y = 0, m = void 0;
                         d < f[0];
-
                       )
                         ((m = g * --y),
                           u.push(
@@ -38610,7 +38599,6 @@
             m = {},
             v = 1e5;
           --v > 0 && y.length > 0;
-
         )
           ((o = y.pop()),
             (c = d.pop()),
@@ -38838,7 +38826,6 @@
                   this.meridiansLabels_ && (l += this.meridians_.length),
                     this.parallelsLabels_ && (l += this.parallels_.length);
                   l > this.featurePool_.length;
-
                 )
                   ((s = new gt()), this.featurePool_.push(s))
                 var u = n.getFeaturesCollection()
@@ -39038,14 +39025,12 @@
                   h = this.addParallel_(p, w, b, n, t, 0),
                   c = 0;
                 p != this.minLat_ && c++ < y;
-
               )
                 ((p = Math.max(p - i, this.minLat_)),
                   (h = this.addParallel_(p, w, b, n, t, h)))
               for (
                 p = Ne(g, this.minLat_, this.maxLat_), c = 0;
                 p != this.maxLat_ && c++ < y;
-
               )
                 ((p = Math.min(p + i, this.maxLat_)),
                   (h = this.addParallel_(p, w, b, n, t, h)))
@@ -40126,7 +40111,6 @@
                   u = 0,
                   c = 0;
                 t.pos < i;
-
               ) {
                 if (!a) {
                   var h = t.readVarint()
@@ -43483,7 +43467,6 @@
                 for (
                   var c = s.depth, h = void 0, p = s.segment, f = a[1];
                   e.length < u.getStride();
-
                 )
                   e.push(p[f][e.length])
                 switch (u.getType()) {
@@ -43720,7 +43703,6 @@
                   a = t.depth,
                   s = t.index;
                 e.length < o.getStride();
-
               )
                 e.push(0)
               switch (o.getType()) {
@@ -45861,7 +45843,6 @@
                   i = /^\s*([+\-]?\d*\.?\d+(?:[eE][+\-]?\d+)?)\s*/,
                   o = [];
                 (r = i.exec(n));
-
               )
                 (o.push(parseFloat(r[1])), (n = n.substr(r[0].length)))
               if ('' === n) {
@@ -47676,7 +47657,6 @@
             i =
               /^\s*([+\-]?\d*\.?\d+(?:e[+\-]?\d+)?),([+\-]?\d*\.?\d+(?:e[+\-]?\d+)?)(?:\s+|,|$)(?:([+\-]?\d*\.?\d+(?:e[+\-]?\d+)?)(?:\s+|$))?\s*/i;
           (n = i.exec(e));
-
         ) {
           var o = parseFloat(n[1]),
             a = parseFloat(n[2]),
@@ -52098,7 +52078,6 @@
                     f,
                     d = 3 * Math.floor(Math.log(a * o) / Math.log(10));
                   ;
-
                 ) {
                   p = Math.floor(d / 3)
                   var g = Math.pow(10, p)
