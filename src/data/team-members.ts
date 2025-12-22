@@ -9,25 +9,11 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/JamieAtkins.jpg',
   },
   {
-    name: 'Vesna Bertoncelj',
-    position: 'PhD candidate',
-    description:
-      'Vesna investigates how pollutants spread around coral reefs on Curacao.',
-    image: 'utrecht-team/VesnaBertoncelj.png',
-  },
-  {
     name: 'Meike Bos',
     position: 'Postdoctoral researcher',
     description:
       'Meike develops parameterisations for the dynamics of macroplastic items in oceanic flows.',
     image: 'utrecht-team/MeikeBos.jpg',
-  },
-  {
-    name: 'Gaia Buccino',
-    position: 'PhD exchange researcher from OGS Trieste',
-    description:
-      'Gaia develops models for the ingestion and egestion of microplastics by zooplankton.',
-    image: 'utrecht-team/GaiaBuccino.jpg',
   },
   {
     name: 'Emma Daniëls',
@@ -46,13 +32,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
       googlescholar: 'https://scholar.google.com/citations?user=KIx5ROoAAAAJ',
     },
     image: 'utrecht-team/MichaelDenes.jpg',
-  },
-  {
-    name: 'Reint Fischer',
-    position: 'Research software support',
-    description:
-      'Reint supports Parcels users and develops tutorials to facilitate their onboarding.',
-    image: 'utrecht-team/ReintFischer.jpeg',
   },
   {
     name: 'Elena Gianotten',
@@ -130,6 +109,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
     },
   },
   {
+    name: 'Vesna Bertoncelj',
+    position: 'PhD candidate',
+  },
+  {
     name: 'Mariana de Botton Falcon',
     position: 'MSc student',
     links: {
@@ -168,6 +151,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
     links: {
       Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/29288',
     },
+  },
+  {
+    name: 'Gaia Buccino',
+    position: 'PhD exchange researcher from OGS Trieste',
   },
   {
     name: 'Laura Chow',
@@ -274,6 +261,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Darshika Manral',
     position: 'PhD candidate',
+    links: {
+      Thesis: 'https://doi.org/10.33540/2801',
+    },
   },
   {
     name: 'Sophie van Mil',
@@ -326,12 +316,15 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Claudio Pierard',
     position: 'PhD candidate',
+    links: {
+      Thesis: 'https://doi.org/10.33540/2819',
+    },
   },
   {
     name: 'Daan Reijnders',
     position: 'PhD candidate & MSc student',
     links: {
-      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/34936',
+      Thesis: 'https://doi.org/10.33540/2652',
     },
   },
   {
@@ -366,6 +359,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Denise Ruijsch',
     position: 'MSc student',
+    links: {
+      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/43358',
+    },
   },
   {
     name: 'Sophie Schmiz',
@@ -384,6 +380,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Ezekiel Stevens',
     position: 'MSc student',
+    links: {
+      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/48380',
+    },
   },
   {
     name: 'Nicoleta Tsakali',
