@@ -261,6 +261,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Darshika Manral',
     position: 'PhD candidate',
+    links: {
+      Thesis: 'https://doi.org/10.33540/2801',
+    },
   },
   {
     name: 'Sophie van Mil',
@@ -313,12 +316,15 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Claudio Pierard',
     position: 'PhD candidate',
+    links: {
+      Thesis: 'https://doi.org/10.33540/2819',
+    },
   },
   {
     name: 'Daan Reijnders',
     position: 'PhD candidate & MSc student',
     links: {
-      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/34936',
+      Thesis: 'https://doi.org/10.33540/2652',
     },
   },
   {
@@ -353,6 +359,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Denise Ruijsch',
     position: 'MSc student',
+    links: {
+      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/43358',
+    },
   },
   {
     name: 'Sophie Schmiz',
@@ -371,6 +380,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Ezekiel Stevens',
     position: 'MSc student',
+    links: {
+      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/48380',
+    },
   },
   {
     name: 'Nicoleta Tsakali',
