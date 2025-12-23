@@ -2704,6 +2704,16 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Across the Indian Ocean: post-nesting migrations of leatherback turtles from Little Andaman Island in the Bay of Bengal',
+    published_info: 'Endangered Species Research, 58, 417-433',
+    authors:
+      'Petchiappan, A, A Swaminathan, I Samad, N Namboothri, K Shanker (2025)',
+    doi: 'https://doi.org/10.3354/esr01457',
+    abstract:
+      'Leatherback sea turtles Dermochelys coriacea perform extensive post-nesting migrations with a high degree of inter-individual variation. Oceanographic features such as mesoscale eddies and ocean currents can influence these long-distance movements by directly influencing their swimming, as well as through differential distribution of prey. Here, we used satellite telemetry to investigate the routes taken by 9 leatherback turtles tagged on Little Andaman Island in the Indian Ocean. A switching state-space model (SSM) was used to classify the locations into 2 behavioural states: ’migrating’ and ’resident’. We used remote sensing data sets to examine the influence of oceanographic features and environmental variables on turtle migration. Finally, we executed Lagrangian dispersal models to determine whether adult migratory paths aligned with the passive drift encountered by hatchlings when they leave their natal beach. The tagged leatherbacks showed widely varying routes and final destinations: while 4 turtles swam south-westwards in the direction of Madagascar and mainland Africa, 5 swam south-eastwards towards the coasts of Western Australia and Timor-Leste. West-travelling turtles showed a higher degree of passive swimming and an influence of eddies. ’Resident’ leatherback locations at the ends of the tracks had significantly higher values of chlorophyll and primary productivity. Dispersal models showed that hatchlings remained in the Bay of Bengal for 5-10 yr, suggesting that active swimming may be needed to reach current systems that eventually enable them to reach adult feeding grounds. Overall, leatherbacks from the Andaman Islands used a wide range of feeding areas, which may make them more resilient to localised threats.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
@@ -2733,7 +2743,7 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
-      'Influences of Dispersal and Environmental Selection on Zooplankton Distributions Across the Upper 1000 m of the North Pacific',
+      'Influences of Dispersal and Environmental Selection on Zooplankton Distributions Across the Upper 1000 m of the North Pacific',
     published_info: 'Journal of Biogeography, in press',
     authors:
       'Matthews, SA, K Kaminsky, AE Cazares-Nuesser, JM Questel, L Blanco-Bercial, J Hirai, MD Ohman (2026)',
