@@ -2106,7 +2106,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Similarities and differences in circulation beneath the Filchner- Ronne and Ross Ice Shelves: A Lagrangian point of view',
-    published_info: 'Polar Science, in press .',
+    published_info: 'Polar Science, 43, 101165.',
     authors:
       'Maderich, V, R Bezhenar, I Brovchenko, F Boeira Dias, C Äijälä, P Uotila (2025)',
     doi: 'https://doi.org/10.1016/j.polar.2025.101165',
@@ -2211,7 +2211,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'The Role of Wind on the Simulated Dispersal and Recruitment of a Commercially Important Hawaiʻi Bottomfish',
-    published_info: 'Fisheries Oceanography, in press .',
+    published_info: 'Fisheries Oceanography, 34, e12725.',
     authors:
       'Suca, JJ, JLK Wren, GNM Mukai, DR Kobayashi, KR Tanaka, AL Schmidt, JL Whitney, RR Rykaczewski (2025)',
     doi: 'https://doi.org/10.1111/fog.12725',
@@ -2270,7 +2270,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Presence of two eddies in close proximity drives large spatial and temporal heterogeneity in the euphotic zone',
-    published_info: 'Progress in Oceanography, in press',
+    published_info: 'Progress in Oceanography, 235, 103476',
     authors:
       'Ramondenc, S, RS Lampitt, MF Norrbin, A Belcher, W-J von Appen, MH Iversen (2025)',
     doi: 'https://doi.org/10.1016/j.pocean.2025.103476',
@@ -2290,7 +2290,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'High frequency radar observing system simulation experiment in the Western Mediterranean Sea. A Lagrangian assessment approach',
-    published_info: 'Ocean Modelling, in press',
+    published_info: 'Ocean Modelling, 196, 102553',
     authors:
       'Hernández-Lasheras, J, A Orfila, A Santana, I Hernandez-Carrasco, B Mourre (2025)',
     doi: 'https://doi.org/10.1016/j.ocemod.2025.102553',
@@ -2309,7 +2309,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Altimeter-Derived poleward Lagrangian pathways in the California current system: Part 2 – 2-D patterns of parcel transports',
-    published_info: 'Progress in Oceanography, in press',
+    published_info: 'Progress in Oceanography, 235, 103495',
     authors: 'Strub, PT, C James (2025)',
     doi: 'https://doi.org/10.1016/j.pocean.2025.103495',
     abstract:
@@ -2409,7 +2409,8 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Drifting Along: A Global Validation of Climatologies of Numerical Dispersal Over the Continental Shelf Using Trajectories From the Global Drifter Program',
-    published_info: 'Journal of Geophysical Research: Biogeosciences, in press',
+    published_info:
+      'Journal of Geophysical Research: Biogeosciences, 130, e2024JG008708',
     authors: 'Lush, WG, JM Pringle (2025)',
     doi: 'https://doi.org/10.1029/2024JG008708',
     abstract:
@@ -2446,7 +2447,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Campeche Escarpment Eddies in the Abyssal Gulf of Mexico: Properties and Conditions for their Formation',
-    published_info: 'Journal of Physical Oceanography, in press',
+    published_info: 'Journal of Physical Oceanography, 55, 1811-1830',
     authors:
       'Domínguez-Guadarrama, A, P  Pérez-Brunius, J Sheinbaum, J Jouanno, L Zavala-Sansón, J Candela Pérez (2025)',
     doi: 'https://doi.org/10.1175/JPO-D-24-0221.1',
@@ -2456,7 +2457,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Sargassum transport to the Amazon Coast: Explaining the stranding through meteorological and oceanographic conditions',
-    published_info: 'Harmful Algae, in press',
+    published_info: 'Harmful Algae, 149, 102955',
     authors:
       'Amorim, JPM, A Melo do Carmo Casseb, J Eduardo Martinelli Filho (2025)',
     doi: 'https://doi.org/10.1016/j.hal.2025.102955',
@@ -2466,7 +2467,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Quantifying sources of floating marine debris on the coasts of the Balearic Islands',
-    published_info: 'Marine Environmental Research, in press',
+    published_info: 'Marine Environmental Research, 212, 107480',
     authors:
       'Ramos-Alcántara, J, J Soto-Navarro, E Verger-Miralles, G Jordà (2025)',
     doi: 'https://doi.org/10.1016/j.marenvres.2025.107480',
@@ -2494,7 +2495,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Seasonal effects of hydrodynamics and biofouling on the vertical transport of microplastics in the Vietnam coastal region, South China Sea',
-    published_info: 'Journal of Hazardous Materials, in press',
+    published_info: 'Journal of Hazardous Materials, 498, 139744',
     authors: 'Cai, C, B Hong, L Zhu, H Xu (2025)',
     doi: 'https://doi.org/10.1016/j.jhazmat.2025.139744',
     abstract:
@@ -2512,7 +2513,7 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'A coupled Lagrangian-AI hierarchical and heterogeneous model for predicting bacteria contamination in farmed mussels',
-    published_info: 'Future Generation Computer Systems, in press',
+    published_info: 'Future Generation Computer Systems, 176, 108108',
     authors:
       'Giuseppe De Vita, C, G Mellone, D Di Luccio, J Garcia-Blas, F Barchiesi, R Montella (2025)',
     doi: 'https://doi.org/10.1016/j.future.2025.108108',
