@@ -2714,6 +2714,16 @@ export const papersCitingParcels: Paper[] = [
   },
   {
     title:
+      'Diversity, drivers, and dispersal of high Arctic meroplanktonic communities',
+    published_info: 'Progress in Oceanography, in press',
+    authors:
+      'Schrage, KR, JNJ Weston, A Kraberg, R McPherson, W-J Von Appen, L Lago, KS Meyer-Kaiser (2025)',
+    doi: 'https://doi.org/10.1016/j.pocean.2025.103656',
+    abstract:
+      'Rapid Arctic warming is altering marine ecosystems, yet the diversity and dispersal of meroplankton—larval stages of benthic invertebrates—remain poorly understood in the region. This study presents the first detailed characterization of meroplanktonic communities in the Fram Strait, based on summer collections made in 2023 and 2024 across the Long-Term Ecological Research observatory HAUSGARTEN. Using integrated and depth-stratified vertical net tows and DNA barcoding, we identified 77 taxa, 33 of which were identified to the species level. Meroplankton were most dense in the upper 200 m, dominated by bivalves and ophiuroids, with significant patchiness across depths and regions. Community composition was related to water mass and phytoplankton community composition (explaining 25 % of the variability among stations), but not to sea ice cover, reflecting a complex coupling between benthic reproduction and pelagic conditions. Lagrangian particle tracking revealed that larvae in the West Spitsbergen Current may originate from as far south as northern Norway, while East Greenland Current larvae likely derive from central Arctic waters. Species-level investigations of meroplankton distribution are critical for assessing existing biodiversity and detecting changes to species composition. Here, most larvae belonged to local or Arcto-Boreal species, though seven taxa had no adult records in the Fram Strait, which may indicate larvae being wasted (not surviving to settlement), broad connectivity among coastal Arctic populations, and/or range expansions. These findings highlight the interplay between hydrography and hydrodynamics, larval ecology, and climate-driven change, and establish a baseline for monitoring Arctic benthic connectivity and biodiversity under ongoing ocean warming.',
+  },
+  {
+    title:
       'Dispersion monitoring services in the Mediterranean Sea: A multi-model statistical approach',
     published_info: 'Marine Pollution Bulletin, 222, 118574',
     authors: 'Maddalena Scotto, B, A Lira Loarca, A Novellino, G Besio (2026)',
