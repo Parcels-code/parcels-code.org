@@ -57,6 +57,13 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/JimenaMedinaRubio.jpeg',
   },
   {
+    name: 'Marlies Pos',
+    position: 'BSc student',
+    description:
+      'Marlies explores how partially-submerged items are transported by ocean currents and winds.',
+    image: 'utrecht-team/MarliesPos.jpg',
+  },
+  {
     name: 'Marc Schneiter',
     position: 'PhD candidate',
     description:
