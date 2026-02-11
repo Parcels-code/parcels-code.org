@@ -34,13 +34,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/MichaelDenes.jpg',
   },
   {
-    name: 'Elena Gianotten',
-    position: 'MSc student',
-    description:
-      'Elena creates a model to simulate the dispersion of Sargassum.',
-    image: 'utrecht-team/ElenaGianotten.JPG',
-  },
-  {
     name: 'Nick Hodgskin',
     position: 'Research software engineer',
     description: 'Nick supports the development and use of the parcels code.',
@@ -55,6 +48,13 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     description:
       'Jimena investigates how ocean currents transport plastic in the North Sea.',
     image: 'utrecht-team/JimenaMedinaRubio.jpeg',
+  },
+  {
+    name: 'Marlies Pos',
+    position: 'BSc student',
+    description:
+      'Marlies explores how partially-submerged items are transported by ocean currents and winds.',
+    image: 'utrecht-team/MarliesPos.jpg',
   },
   {
     name: 'Marc Schneiter',
@@ -204,6 +204,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Rebeca De La Fuente',
     position: 'PhD exchange researcher from University of Balearic Islands',
+  },
+  {
+    name: 'Elena Gianotten',
+    position: 'MSc student',
   },
   {
     name: 'Laura Gomez Navarro',
