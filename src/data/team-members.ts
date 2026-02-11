@@ -34,13 +34,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/MichaelDenes.jpg',
   },
   {
-    name: 'Elena Gianotten',
-    position: 'MSc student',
-    description:
-      'Elena creates a model to simulate the dispersion of Sargassum.',
-    image: 'utrecht-team/ElenaGianotten.JPG',
-  },
-  {
     name: 'Nick Hodgskin',
     position: 'Research software engineer',
     description: 'Nick supports the development and use of the parcels code.',
@@ -211,6 +204,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Rebeca De La Fuente',
     position: 'PhD exchange researcher from University of Balearic Islands',
+  },
+  {
+    name: 'Elena Gianotten',
+    position: 'MSc student',
   },
   {
     name: 'Laura Gomez Navarro',
