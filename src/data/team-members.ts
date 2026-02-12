@@ -71,6 +71,20 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/EsmeevanAmelsfort.jpeg',
   },
   {
+    name: 'Viktor van Bilsen',
+    position: 'MSc student',
+    description:
+      'Viktor investigates how plastic pollution moves through the Wadden Sea.',
+    image: 'utrecht-team/ViktorvanBilsen.jpg',
+  },
+  {
+    name: 'Luuk van den Hoven',
+    position: 'BSc student',
+    description:
+      'Luuk explores how the Parcels code can be accelerated using GPUs.',
+    image: 'utrecht-team/LuukvandenHoven.png',
+  },
+  {
     name: 'Arjen van Mullem',
     position: 'MSc student',
     description:
