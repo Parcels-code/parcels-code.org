@@ -2842,4 +2842,14 @@ export const papersCitingParcels: Paper[] = [
     abstract:
       'Marine diseases threaten ecosystems and aquaculture, additionally harming endangered species including the European flat oyster (Ostrea edulis). Although international restoration efforts follow biosecurity protocols, ocean currents may transport pathogens to restoration sites. Here, we used biophysical Lagrangian dispersal simulations to map upper-bound exposure risk of the oyster pathogen Bonamia ostreae across the North-West European shelf. We developed a workflow with pre-aggregated connectivity components allowing analyses of multiple scenarios without rerunning simulations. We found typical dispersal distances from 30 km for free pathogens to 50-60 km for infected larvae, with high spatial heterogeneity emphasizing the need for site-specific simulations. About 30% of restoration sites showed a continuously high potential exposure to pathogen arrival. We identified highly connected diseased sites that may drive transmission. We provide a scaling factor to calculate pathogen exposure at target locations and a tool for selecting low-risk sites. This transferable workflow supports site-specific spatial planning in restoration, aquaculture, and disease monitoring.',
   },
+  {
+    title:
+      'Frontal-Driven Water-Mass Transformation in a Western Boundary Current: Evidence From the Yucatan Current',
+    published_info: 'Geophysical Research Letters, 53, e2025GL119064',
+    authors:
+      'Durante, G, J Sheinbaum, Al Domínguez-Guadarrama, J Jouanno, L Hiron, U Send, H Verdugo-Ortega, A Ruiz-Angulo (2026)',
+    doi: 'https://doi.org/10.1029/2025GL119064',
+    abstract:
+      'We report the recurrent formation of waters with thermohaline properties similar to Gulf Common Water (GCW) in the western Yucatan Channel, absent upstream in the Caribbean. Mooring observations and a partial submesoscale-resolving model show that these Yucatan GCW forms locally when the Yucatan Current separates from the slope, intensifying a frontal zone with isopycnal uplift, cyclonic vorticity, and sharp lateral gradients, signatures of submesoscale activity. These conditions favor interleaving and mixing among Caribbean inflow waters within a vertically compressed isopycnal layer. Lagrangian backtracking confirms their local origin, while forward tracking reveals export within cyclonic frontal eddies along the Loop Current periphery. Our findings uncover a previously unrecognized pathway of water-mass transformation in the Yucatan Channel and highlight its potential implications for Loop Current variability.',
+  },
 ]
