@@ -25,6 +25,8 @@ export const DesktopNav = ({ navItems, ...props }) => {
                 fontSize={'sm'}
                 fontWeight={'bold'}
                 // eslint-disable-next-line react-hooks/rules-of-hooks
+                whiteSpace={'nowrap'}
+                flexShrink={0}
                 color={useColorModeValue('gray.600', 'gray.200')}
                 _hover={{
                   textDecoration: 'none',
