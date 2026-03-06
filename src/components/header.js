@@ -2,7 +2,7 @@ import { DesktopNav } from '@/components/desktop-nav'
 import { Link } from '@/components/mdx'
 import { MobileNav } from '@/components/mobile-nav'
 import { menuItems } from '@/data/menu-items'
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 import {
   Box,
   Container,
@@ -94,6 +94,13 @@ export const Header = () => {
             <DesktopNav
               navItems={navItems}
               display={{ base: 'none', md: 'flex' }}
+            />
+            <IconButton
+              aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
+              icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              onClick={toggleColorMode}
+              variant={'ghost'}
+              size={'sm'}
             />
           </Stack>
         </Container>

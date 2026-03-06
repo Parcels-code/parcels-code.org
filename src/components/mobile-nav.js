@@ -35,6 +35,7 @@ const MobileNavItem = ({ href, children, label }) => {
       >
         <Text
           fontWeight={600}
+          whiteSpace={'nowrap'}
           color={useColorModeValue('gray.600', 'gray.200')}
         >
           {label}
@@ -56,6 +57,7 @@ const MobileNavItem = ({ href, children, label }) => {
           pl={4}
           borderLeft={1}
           borderStyle={'solid'}
+          whiteSpace={'nowrap'}
           borderColor={useColorModeValue('gray.200', 'gray.700')}
           align={'start'}
         >
