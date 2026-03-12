@@ -2,7 +2,7 @@ export const Projects = [
   {
     name: 'PlasticParcels',
     description:
-      'PlasticParcels is a Python package to simulate the transport and dispersion of plastics in the ocean.',
+      'PlasticParcels simulates the transport and dispersion of plastics in the ocean.',
     repo: 'https://github.com/OceanParcels/plasticparcels',
     homepage: 'https://plastic.parcels-code.org/en/latest/',
     logo_light: '/projects/plasticparcelslogo.png',
@@ -28,9 +28,25 @@ export const Projects = [
   {
     name: 'VirtualFleet',
     description:
-      'Virtual Fleet is a Python tool that simulates Argo floats trajectories and measurement.',
+      'Virtual Fleet simulates Argo floats trajectories and measurement.',
     homepage: 'https://github.com/euroargodev/VirtualFleet',
     logo_light: '/projects/virtualfleet_logo.png',
     logo_dark: '/projects/virtualfleet_logo_dia.png',
+  },
+  {
+    name: 'LOCATE',
+    description:
+      'LOCATE simulates plastic particle dispersion in nearshore water.',
+    homepage: 'https://github.com/UPC-LOCATE/LOCATE',
+    logo_light: '/projects/LOCATE_logo.png',
+    logo_dark: '/projects/LOCATE_logo.png',
+  },
+  {
+    name: 'PyPlume',
+    description:
+      'PyPlume unifies simulating, analyzing and visualizing particle trajectories.',
+    homepage: 'https://github.com/jerukan/PyPlume',
+    logo_light: '/projects/pyplume_logo.png',
+    logo_dark: '/projects/pyplume_logo.png',
   },
 ]
