@@ -15,6 +15,7 @@ export const ProjectCard = ({
       as={Link}
       href={repo || homepage}
       p={4}
+      h='full'
       rounded='lg'
       transitionProperty='all'
       transitionDuration='slower'
@@ -27,11 +28,12 @@ export const ProjectCard = ({
         textDecoration: 'none',
       }}
     >
-      <CardBody p={0}>
+      <CardBody p={0} h='full'>
         <Stack
           spacing={2}
           direction={'column'}
           justify={'space-between'}
+          h='full'
           gap={0}
         >
           <Box>
