@@ -222,6 +222,9 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Elena Gianotten',
     position: 'MSc student',
+    links: {
+      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/51068',
+    },
   },
   {
     name: 'Laura Gomez Navarro',
