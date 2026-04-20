@@ -1983,11 +1983,19 @@ export const papersCitingParcels: Paper[] = [
   {
     title:
       'Identifying the origins of nanoplastics in the abyssal South Atlantic using backtracking Lagrangian simulations with fragmentation',
-    published_info: 'Ocean and Coastal Research, 72 .',
+    published_info: 'Ocean and Coastal Research, 72.',
     authors: 'Pierard, CM, F Meirer, E van Sebille (2024)',
     doi: 'http://doi.org/10.1590/2675-2824072.24008',
     abstract:
       'During an expedition in January 2019, nanoplastics were sampled at a depth of -5,170 m over Cape Basin, in the South Atlantic Ocean. Using photo-induced force microscopy, it was suggested that these were polyethylene terephthalate (PET-like) particles with various sizes down to 100 nm, at different stages of degradation. By using a state-of-the-art Lagrangian 3D model, which includes fragmentation, we backtracked virtual particles to map the origin of the PET nanoplastics sampled at this location. Fragmentation processes are crucial to understanding the origin of nanoplastics (and microplastics) because they allow for detecting when and where particles become so small that they transition to a colloidal state, in which the buoyant force becomes negligible. We found that it is very unlikely that the nanoplastic particles entered the ocean as nanoplastics and then drifted to the sampling location. We also found that the fragmentation scheme, particularly the fragmentation timescale prescribed to the modeled particles, affects how they drift in the ocean by the velocity with which they sink. This study contributes to understanding the fate and sources of nanoplastics in the deep ocean and the development of 3D backtracking simulations for source attribution of ocean plastic.',
+  },
+  {
+    title: 'Predictive Modelling of Sea Debris around Maltese Coastal Waters',
+    published_info: 'Oceans, 5, 672-694.',
+    authors: 'Dingli, M, K Guillaumier, A Gauci (2024)',
+    doi: 'https://doi.org/10.3390/oceans5030039',
+    abstract:
+      'The accumulation of sea-surface debris around the coastal waters of Malta poses significant ecological and environmental challenges, negatively affecting marine ecosystems and human activities. This issue is exacerbated due to the lack of an effective system tailored to predict surface-debris movement specifically for the Islands of Malta. To address this gap, a pipeline that combines a machine learning-based prediction system with a physics-based model is proposed. This pipeline uses data on historical sea-surface current velocities to forecast future conditions and visualise debris movement. Central to this system are two machine learning models trained to predict surface velocities for the next 24 h for a specific area. These predictions are then utilised in a Lagrangian model to simulate and visualise the debris movement, providing insights into future dispersion patterns. A comparative evaluation of both models using real-world data is made to determine which one performs best in this application. This method offers a tailored approach to addressing sea-surface debris around Malta by accurately predicting sea-surface current velocities and visualising debris movement, improving cleanup operations and marine conservation strategies.',
   },
   {
     title:
@@ -2925,5 +2933,14 @@ export const papersCitingParcels: Paper[] = [
     doi: 'https://doi.org/10.1016/j.dsr.2026.104687',
     abstract:
       'Eddies can retain water for several months to over a year, but their water properties may change as they move. In the potential spicity-density (π-σ) space, variations in water mass properties are decomposed into a diapycnal component Δσ and an isopycnal component Δπ. This study quantifies the change rate V_λ of water properties of global eddies in this space, where V_λ = d[sqrt(Δσ^2+Δπ^2)]/dt, with a mean value ranging from 0 to 0.03 kg/m^3/day. Using Argo floats and altimetry data, more than 150,000 eddies were sampled by Argo floats, providing over 600,000 profiles from 2000 to 2022. Results show water properties near eddy centers are more conserved than at edges, with higher V_λ during eddy generation and extinction and V_λ decreasing with depth. The 3-D structure of V_λ can be approximated by a unified solution by solving the spicity equation on isopycnal layers. Weaker V_λ values are observed in Lagrangian eddies than in Eulerian eddies, and the Eulerian view overestimates V_λ by ∼50% due to the misattribution of property changes to trapped water that is actually being exchanged. Analogous to decomposing kinetic energy into components, the contribution of isopycnal and diapycnal components to V_λ is given by the fraction of total variance. It is found that the isopycnal component accounts for 50%-70% of V_λ in 0-1000 m, and a larger V_λ is observed in the eddy flanks adjacent to strong currents (e.g., Kuroshio Extension, Gulf Stream). This π-σ decomposition approach may be a useful tool for the eddy research community.',
+  },
+  {
+    title:
+      'Stepping-stone larval dispersal networks maintain broad-scale connectivity across the Indo-West Pacific',
+    published_info: 'Marine Ecology Progress Series, 783, 15103',
+    authors: 'Saito, N, K Hamamoto, A Iguchi (2026)',
+    doi: 'https://doi.org/10.3354/meps15103',
+    abstract:
+      'Connectivity between patchy marine habitats through larval dispersal is crucial for the persistence of local populations. Studies of various marine species suggest broad-scale gene flow across the tropical Indo-West Pacific (IWP), presumably facilitated by larval dispersal via stepping-stone habitats. However, the generational timescales and geographic paths involved in such dispersal remain unclear, owing to limited biophysical modelling studies. Here, we quantified connectivity among patchy habitats of the mangrove whelk Terebralia palustris across the IWP using habitat suitability modelling, larval dispersal modelling, and mitochondrial DNA-based population genetic analysis. Our modelling revealed a single larval dispersal network connecting all potential habitats across the IWP. At least 14 generations were required for dispersal via stepping-stone habitats to connect the outer edges of the IWP. The Maldives and Seychelles served as key stepping stones for dispersal, linking the western Indian Ocean and the western Pacific Ocean through monsoon-driven ocean currents. Major haplotypes were shared across 9 regions of the IWP, providing genetic support for a single larval dispersal network. Our findings provide fundamental insights into ecological networks formed by stepping-stone dispersal across the IWP, which maintain broad-scale connectivity of T. palustris and potentially other coastal species.',
   },
 ]
