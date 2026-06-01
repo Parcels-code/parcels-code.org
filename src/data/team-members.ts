@@ -64,13 +64,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/MarcSchneiter.png',
   },
   {
-    name: 'Esmee van Amelsfort',
-    position: 'MSc student',
-    description:
-      'Esmee investigates the spread of pollution in the Adriatic Sea.',
-    image: 'utrecht-team/EsmeevanAmelsfort.jpeg',
-  },
-  {
     name: 'Viktor van Bilsen',
     position: 'MSc student',
     description:
@@ -117,6 +110,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Bas Altena',
     position: 'Postdoctoral researcher',
+  },
+  {
+    name: 'Esmee van Amelsfort',
+    position: 'MSc student',
   },
   {
     name: 'Margo van Asschenbergh',
