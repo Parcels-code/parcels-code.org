@@ -64,13 +64,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/MarcSchneiter.png',
   },
   {
-    name: 'Esmee van Amelsfort',
-    position: 'MSc student',
-    description:
-      'Esmee investigates the spread of pollution in the Adriatic Sea.',
-    image: 'utrecht-team/EsmeevanAmelsfort.jpeg',
-  },
-  {
     name: 'Viktor van Bilsen',
     position: 'MSc student',
     description:
@@ -104,12 +97,23 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     },
     image: 'utrecht-team/ErikvanSebille.jpg',
   },
+  {
+    name: 'Chit Yan Toe',
+    position: 'Postdoctoral researcher',
+    description:
+      'Chit develops simulations of the transport of macroplastic items in beaching waves.',
+    image: 'utrecht-team/ChitYanToe.jpg',
+  },
 ]
 
 export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Bas Altena',
     position: 'Postdoctoral researcher',
+  },
+  {
+    name: 'Esmee van Amelsfort',
+    position: 'MSc student',
   },
   {
     name: 'Margo van Asschenbergh',
