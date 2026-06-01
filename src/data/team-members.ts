@@ -102,6 +102,10 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     position: 'Postdoctoral researcher',
     description:
       'Chit develops simulations of the transport of macroplastic items in beaching waves.',
+    links: {
+      googlescholar:
+        'https://scholar.google.com/citations?user=HjRYIFkAAAAJ&hl=en',
+    },
     image: 'utrecht-team/ChitYanToe.jpg',
   },
 ]
