@@ -104,6 +104,13 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     },
     image: 'utrecht-team/ErikvanSebille.jpg',
   },
+  {
+    name: 'Chit Yan Toe',
+    position: 'Postdoctoral researcher',
+    description:
+      'Chit develops simulations of the transport of macroplastic items in beaching waves.',
+    image: 'utrecht-team/ChitYanToe.jpg',
+  },
 ]
 
 export const PriorTeamMembers: PriorTeamMember[] = [
