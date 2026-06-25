@@ -13,12 +13,12 @@ summary: 'Parcels v4.0-preview is now available, bringing exciting new features 
 
 We are very excited to announce that Parcels v4-preview is now available for performing Lagrangian simulations in hydrodynamic flows. Parcels v4 is a complete redesign of the [Parcels code](https://parcels-code.org) and is designed to be more flexible and extensible than previous versions.
 
-Parcels v4 is pure python code, so that it can leverage the full power of the [Pangeo ecosystem](https://pangeo.io/) of geoscience python tools such as xarray, dask and zarr. Particle advection and interpolation are now vectorised operations, which improves performance and makes [particle-particle interactions](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_interaction.html) easier to implement.
+Parcels v4 is pure python code, so that it can leverage the full power of the [Pangeo ecosystem](https://pangeo.io/) of geoscience python tools such as Xarray, Dask and Zarr. Particle advection and interpolation are now vectorised operations, which improves performance and makes [particle-particle interactions](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_interaction.html) easier to implement.
 
 Key improvements of Parcels v4 are
 
 1. Support for [unstructured grids](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_grids.html).
-2. More flexibility in writing Kernels (including [using python functions in Kernels](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_gsw_density.html) .and support for writing output in a Kernel)
+2. More flexibility in writing Kernels (including [using python functions in Kernels](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_gsw_density.html) and support for writing output in a Kernel)
 3. Support for [user-defined interpolators](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_interpolation.html).
 4. More robust and flexible support for [nested grids](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_nestedgrids.html).
 
