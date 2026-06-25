@@ -11,7 +11,7 @@ export const footerItems = {
     { label: 'Blog', href: '/blog' },
     {
       label: 'Brand Assets',
-      href: 'https://github.com/OceanParcels/oceanparcels_website/tree/main/public/parcels-assets',
+      href: 'https://github.com/Parcels-code/parcels-code.org/tree/main/public/parcels-assets',
     },
     { label: 'Accessibility', href: '/accessibility' },
   ],
@@ -38,11 +38,11 @@ export const footerItems = {
     },
     {
       label: 'GitHub Discussions',
-      href: 'https://github.com/OceanParcels/parcels/discussions',
+      href: 'https://github.com/Parcels-code/parcels/discussions',
     },
     {
       label: 'Issue Tracker',
-      href: 'https://github.com/OceanParcels/parcels/issues',
+      href: 'https://github.com/Parcels-code/parcels/issues',
     },
     { label: 'Utrecht Team', href: '/utrechtteam' },
   ],

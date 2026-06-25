@@ -21,7 +21,7 @@ This project uses a combination of Javascript and Typescript (Javascript - as th
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/OceanParcels/oceanparcels_website
+git clone https://github.com/Parcels-code/parcels-code.org
 ```
 
 ### 2. Install dependencies
