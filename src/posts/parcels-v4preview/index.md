@@ -22,7 +22,7 @@ Key improvements include:
 3. Support for [user-defined interpolators](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_interpolation.html).
 4. More robust and flexible support for [nested grids](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_nestedgrids.html).
 
-We have also changed the [output format to `parquet`](https://docs.parcels-code.org/en/main/getting_started/tutorial_output.html#reading-the-output-file), which is a tabular format and therefore more efficient and flexible for storing large datasets.
+We have also changed the [output format to `parquet`](https://docs.parcels-code.org/en/main/getting_started/tutorial_output.html#reading-the-output-file), which is a tabular format more suited for writing and reading trajectory data.
 
 See the full migration guide from Parcels v3 to v4 [here](https://docs.parcels-code.org/en/main/user_guide/v4-migration.html).
 
