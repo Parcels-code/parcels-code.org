@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { ColorModeImage } from '@/components/ColorModeImage'
 import React from 'react'
+import { FaGithub } from 'react-icons/fa'
 
 export const Header = () => {
   const navItems = React.useMemo(() => menuItems, [])
@@ -95,13 +96,25 @@ export const Header = () => {
               navItems={navItems}
               display={{ base: 'none', md: 'flex' }}
             />
-            <IconButton
-              aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
-              icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              onClick={toggleColorMode}
-              variant={'ghost'}
-              size={'sm'}
-            />
+            <Stack direction={'row'} align={'center'} spacing={0}>
+              <IconButton
+                as={'a'}
+                href={'https://github.com/Parcels-code/parcels'}
+                target={'_blank'}
+                rel={'noopener noreferrer'}
+                aria-label={'Open GitHub repository'}
+                icon={<FaGithub />}
+                variant={'ghost'}
+                size={'lg'}
+              />
+              <IconButton
+                aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
+                icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                onClick={toggleColorMode}
+                variant={'ghost'}
+                size={'lg'}
+              />
+            </Stack>
           </Stack>
         </Container>
       </Flex>
