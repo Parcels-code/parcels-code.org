@@ -13,7 +13,7 @@ summary: 'Parcels v4.0-preview is now available, bringing exciting new features 
 
 We are very excited to announce that Parcels v4-preview is now available for performing Lagrangian simulations in hydrodynamic flows. Parcels v4 is a complete redesign of the [Parcels code](https://parcels-code.org) and is designed to be more flexible and extensible than previous versions.
 
-Parcels v4 is pure python code, so that it can leverage the full power of the [Pangeo ecosystem](https://pangeo.io/) of geoscience python tools such as Xarray, Dask and Zarr. Particle advection and interpolation are now vectorised operations, which improves performance and makes [particle-particle interactions](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_interaction.html) easier to implement.
+With this release - Parcels is a pure Python package that leverages the full power of the [Pangeo ecosystem](https://pangeo.io/) of geoscience python tools such as Xarray, Dask and Zarr. Particle advection and interpolation are now vectorised operations, which improves performance and makes [particle-particle interactions](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_interaction.html) easier to implement.
 
 Key improvements include:
 
@@ -26,6 +26,6 @@ We have also changed the [output format to `parquet`](https://docs.parcels-code.
 
 See the full migration guide from Parcels v3 to v4 [here](https://docs.parcels-code.org/en/main/user_guide/v4-migration.html).
 
-Note that Parcels v4.0 is an early release to gather user feedback and should not be considered stable. We welcome feedback from the community, and encourage users to try out the new version and [report any issues or suggestions](https://github.com/Parcels-Code/parcels/issues). Once incorporating this feedback, improving performance, and implementing a few outstanding features, we aim to release a stable version of Parcels.
+Note that Parcels v4-preview is an early release to gather user feedback and should not be considered stable. We welcome feedback from the community, and encourage users to try out the new version and [report any issues or suggestions](https://github.com/Parcels-Code/parcels/issues). Once incorporating this feedback, improving performance, and implementing a few outstanding features, we aim to release a stable version of Parcels.
 
 Funded by the [WarmWorld ELPHE project](https://www.geomar.de/en/research/ongoing-projects/project-details/prj/376612?cHash=449a07d057ea0d890287bd2b8ca26e8b) funded by the German Federal Ministry for Research, Technology and Space (BMFTR) and the [NWO Vici project “Tracing Marine Macroplastics by Unraveling the Ocean’s Multiscale Transport Processes”](https://www.nwo.nl/en/projects/vic222025), the development of Parcels v4 started in September 2025 and was a collaboration between the [GEOMAR Helmholtz Centre for Ocean Research Kiel](https://www.geomar.de/en/), [FluidNumerics](https://www.fluidnumerics.com/) and the [University of Utrecht](https://www.uu.nl/en) in the Netherlands. The development was led by Nick Hodgskin, Joe Schoonover and Erik van Sebille, with contributions from many others, including Willi Rath, Daniel Lizarbe, and Michael Denes.
