@@ -15,7 +15,7 @@ We are very excited to announce that Parcels v4-preview is now available for per
 
 Parcels v4 is pure python code, so that it can leverage the full power of the [Pangeo ecosystem](https://pangeo.io/) of geoscience python tools such as Xarray, Dask and Zarr. Particle advection and interpolation are now vectorised operations, which improves performance and makes [particle-particle interactions](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_interaction.html) easier to implement.
 
-Key improvements of Parcels v4 are
+Key improvements include:
 
 1. Support for [unstructured grids](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_grids.html).
 2. More flexibility in writing Kernels (including [using python functions in Kernels](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_gsw_density.html) and support for writing output in a Kernel)
