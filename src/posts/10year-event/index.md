@@ -21,19 +21,19 @@ The event ended with a party on Friday evening 3 October 2025, in Utrecht. This 
 
 All times in the schedules below are in Central European Summer Time (GMT+2).
 
-Some sessions have accompanying interactive notebooks. These - along with instructions - can be found [here](https://github.com/OceanParcels/10year-anniversary-event).
+Some sessions have accompanying interactive notebooks. These - along with instructions - can be found [here](https://github.com/Parcels-code/10year-anniversary-event).
 
 ### Wednesday 1 October: Workshops
 
 - Session 1a: How to get started with Parcels [[Video](https://surfdrive.surf.nl/index.php/s/2UTneRPQd6OFPJ0)] - _Erik van Sebille_
 - Session 1b: The Parcels internals: how to get started with code-development - _Nick Hodgskin_
-- Session 2: Making custom kernels [[Notebook](https://github.com/OceanParcels/10year-anniversary-session2) & [Video](https://surfdrive.surf.nl/index.php/s/tbRmcWjUqGuuM01)] - _Michael Denes_
-- Session 3: Lagrangian Diagnostics [[Notebook](https://github.com/OceanParcels/Lagrangian_diags) & [Video](https://surfdrive.surf.nl/index.php/s/MEuGgibPLvxdoiw)] - _Jimena Medina Rubio, Laura Gomez Navarro, Siren Rühs, Nick Hodgskin_
+- Session 2: Making custom kernels [[Notebook](https://github.com/Parcels-code/10year-anniversary-session2) & [Video](https://surfdrive.surf.nl/index.php/s/tbRmcWjUqGuuM01)] - _Michael Denes_
+- Session 3: Lagrangian Diagnostics [[Notebook](https://github.com/Parcels-code/Lagrangian_diags) & [Video](https://surfdrive.surf.nl/index.php/s/MEuGgibPLvxdoiw)] - _Jimena Medina Rubio, Laura Gomez Navarro, Siren Rühs, Nick Hodgskin_
 
 ### Thursday 2 October: Workshops
 
-- Session 4: What is Parcels v4? And how to get ready for it? [[Notebook](https://github.com/OceanParcels/10year-anniversary-session4) & [Video](https://surfdrive.surf.nl/index.php/s/VtnUMPFAGDz2UPR)]- _Nick Hodgskin, Joe Schoonover, Erik van Sebille_
-- Session 5: Particle animations [[Notebook](https://github.com/OceanParcels/10year-anniversary-session5) & [Video](https://surfdrive.surf.nl/index.php/s/WsO8wySLhBemW76)] and colormaps [[Notebook](https://github.com/OceanParcels/10year-anniversary-session5) & [Video](https://surfdrive.surf.nl/index.php/s/5b6tvF6xgX1cN0G)] - _Vesna Bertoncelj, Christian Kehl, Nick Hodgskin_
+- Session 4: What is Parcels v4? And how to get ready for it? [[Notebook](https://github.com/Parcels-code/10year-anniversary-session4) & [Video](https://surfdrive.surf.nl/index.php/s/VtnUMPFAGDz2UPR)]- _Nick Hodgskin, Joe Schoonover, Erik van Sebille_
+- Session 5: Particle animations [[Notebook](https://github.com/Parcels-code/10year-anniversary-session5) & [Video](https://surfdrive.surf.nl/index.php/s/WsO8wySLhBemW76)] and colormaps [[Notebook](https://github.com/Parcels-code/10year-anniversary-session5) & [Video](https://surfdrive.surf.nl/index.php/s/5b6tvF6xgX1cN0G)] - _Vesna Bertoncelj, Christian Kehl, Nick Hodgskin_
 
 ### Friday 3 October: Mini-conference
 

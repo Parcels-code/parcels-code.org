@@ -81,7 +81,7 @@ export default function Blog({ allPostsData }) {
       title={'Blog | Parcels'}
       url={`/blog`}
       card={
-        'https://raw.githubusercontent.com/OceanParcels/oceanparcels_website/main/public/parcels-assets/logo-no-text.png'
+        'https://raw.githubusercontent.com/Parcels-code/parcels-code.org/main/public/parcels-assets/logo-no-text.png'
       }
     >
       <Box as='section'>
