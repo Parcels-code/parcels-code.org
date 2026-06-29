@@ -5155,7 +5155,7 @@
                 throw RangeError(f[t])
               }
               function m(t, e) {
-                for (var r = t.length, n = []; r--; ) n[r] = e(t[r])
+                for (var r = t.length, n = []; r--;) n[r] = e(t[r])
                 return n
               }
               function v(t, e) {
@@ -5167,7 +5167,7 @@
                 )
               }
               function _(t) {
-                for (var e, r, n = [], i = 0, o = t.length; i < o; )
+                for (var e, r, n = [], i = 0, o = t.length; i < o;)
                   (e = t.charCodeAt(i++)) >= 55296 && e <= 56319 && i < o
                     ? 56320 == (64512 & (r = t.charCodeAt(i++)))
                       ? n.push(((1023 & e) << 10) + (1023 & r) + 65536)
@@ -5219,7 +5219,7 @@
                 for ((r = t.lastIndexOf('-')) < 0 && (r = 0), n = 0; n < r; ++n)
                   (t.charCodeAt(n) >= 128 && y('not-basic'),
                     f.push(t.charCodeAt(n)))
-                for (i = r > 0 ? r + 1 : 0; i < g; ) {
+                for (i = r > 0 ? r + 1 : 0; i < g;) {
                   for (
                     o = m, a = 1, s = 36;
                     i >= g && y('invalid-input'),
@@ -5269,7 +5269,7 @@
                   ++a
                 )
                   (p = t[a]) < 128 && S.push(g(p))
-                for (n = i = S.length, i && S.push('-'); n < f; ) {
+                for (n = i = S.length, i && S.push('-'); n < f;) {
                   for (s = u, a = 0; a < f; ++a)
                     (p = t[a]) >= e && p < s && (s = p)
                   for (
@@ -6243,19 +6243,17 @@
           }
         }
         function nt(t, e, r, n) {
-          if (
-            !(
-              'number' == typeof t &&
-              t >= 0 &&
-              t <= 255 &&
-              'number' == typeof e &&
-              e >= 0 &&
-              e <= 255 &&
-              'number' == typeof r &&
-              r >= 0 &&
-              r <= 255
-            )
-          ) {
+          if (!(
+            'number' == typeof t &&
+            t >= 0 &&
+            t <= 255 &&
+            'number' == typeof e &&
+            e >= 0 &&
+            e <= 255 &&
+            'number' == typeof r &&
+            r >= 0 &&
+            r <= 255
+          )) {
             return `Invalid rgba value [${('number' == typeof n ? [t, e, r, n] : [t, e, r]).join(', ')}]: 'r', 'g', and 'b' must be between 0 and 255.`
           }
           return void 0 === n || ('number' == typeof n && n >= 0 && n <= 1)
@@ -7283,7 +7281,7 @@
             o = 0,
             a = r,
             s = 0
-          for (; o <= a; )
+          for (; o <= a;)
             if (
               ((s = Math.floor((o + a) / 2)),
               (n = t[s]),
@@ -7401,7 +7399,7 @@
             }
             if ((i = t) < (r = 0)) return r
             if (i > (n = 1)) return n
-            for (; r < n; ) {
+            for (; r < n;) {
               if (((o = this.sampleCurveX(i)), Math.abs(o - t) < e)) return i
               ;(t > o ? (r = i) : (n = i), (i = 0.5 * (n - r) + r))
             }
@@ -8856,7 +8854,7 @@
             [N, W(U)],
             (t, [e, r]) =>
               (function (t, e, r, n) {
-                for (; r <= n; ) {
+                for (; r <= n;) {
                   const i = (r + n) >> 1
                   if (e[i] === t) return !0
                   e[i] > t ? (n = i - 1) : (r = i + 1)
@@ -10917,7 +10915,7 @@
                   'function' == typeof f.yy.parseError
                     ? (this.parseError = f.yy.parseError)
                     : (this.parseError = Object.getPrototypeOf(this).parseError)
-                  for (var v, _, b, x, w, S, E, T, C = {}; ; ) {
+                  for (var v, _, b, x, w, S, E, T, C = {}; ;) {
                     if (
                       ((_ = r[r.length - 1]),
                       this.defaultActions[_]
@@ -11389,7 +11387,7 @@
         'use strict'
         function t(t, n, i, o, a) {
           !(function t(r, n, i, o, a) {
-            for (; o > i; ) {
+            for (; o > i;) {
               if (o - i > 600) {
                 var s = o - i + 1,
                   l = n - i + 1,
@@ -11410,9 +11408,9 @@
               var p = r[n],
                 f = i,
                 d = o
-              for (e(r, i, n), a(r[o], p) > 0 && e(r, i, o); f < d; ) {
-                for (e(r, f, d), f++, d--; a(r[f], p) < 0; ) f++
-                for (; a(r[d], p) > 0; ) d--
+              for (e(r, i, n), a(r[o], p) > 0 && e(r, i, o); f < d;) {
+                for (e(r, f, d), f++, d--; a(r[f], p) < 0;) f++
+                for (; a(r[d], p) > 0;) d--
               }
               ;(0 === a(r[i], p) ? e(r, i, d) : e(r, ++d, o),
                 d <= n && (i = d + 1),
@@ -11502,7 +11500,7 @@
           }
         }
         function g(e, r, n, i, o) {
-          for (var a = [r, n]; a.length; )
+          for (var a = [r, n]; a.length;)
             if (!((n = a.pop()) - (r = a.pop()) <= i)) {
               var s = r + Math.ceil((n - r) / i / 2) * i
               ;(t(e, s, r, n, o), a.push(r, s, s, n))
@@ -11516,7 +11514,7 @@
             var e = this.data,
               r = []
             if (!f(t, e)) return r
-            for (var n = this.toBBox, i = []; e; ) {
+            for (var n = this.toBBox, i = []; e;) {
               for (var o = 0; o < e.children.length; o++) {
                 var a = e.children[o],
                   s = e.leaf ? n(a) : a
@@ -11530,7 +11528,7 @@
           (n.prototype.collides = function (t) {
             var e = this.data
             if (!f(t, e)) return !1
-            for (var r = []; e; ) {
+            for (var r = []; e;) {
               for (var n = 0; n < e.children.length; n++) {
                 var i = e.children[n],
                   o = e.leaf ? this.toBBox(i) : i
@@ -11615,7 +11613,7 @@
             return ((this.data = t), this)
           }),
           (n.prototype._all = function (t, e) {
-            for (var r = []; t; )
+            for (var r = []; t;)
               (t.leaf
                 ? e.push.apply(e, t.children)
                 : r.push.apply(r, t.children),
@@ -11646,7 +11644,7 @@
             return (o(i, this.toBBox), i)
           }),
           (n.prototype._chooseSubtree = function (t, e, r, n) {
-            for (; n.push(e), !e.leaf && n.length - 1 !== r; ) {
+            for (; n.push(e), !e.leaf && n.length - 1 !== r;) {
               for (
                 var i = 1 / 0, o = 1 / 0, a = void 0, s = 0;
                 s < e.children.length;
@@ -11982,7 +11980,7 @@
           this.buf = null
         },
         readFields: function (t, e, r) {
-          for (r = r || this.length; this.pos < r; ) {
+          for (r = r || this.length; this.pos < r;) {
             var n = this.readVarint(),
               i = n >> 3,
               o = this.pos
@@ -12108,7 +12106,7 @@
               : (function (t, e, r) {
                   var n = '',
                     i = e
-                  for (; i < r; ) {
+                  for (; i < r;) {
                     var o,
                       a,
                       s,
@@ -12170,60 +12168,60 @@
         readPackedVarint: function (t, e) {
           if (this.type !== i.Bytes) return t.push(this.readVarint(e))
           var r = a(this)
-          for (t = t || []; this.pos < r; ) t.push(this.readVarint(e))
+          for (t = t || []; this.pos < r;) t.push(this.readVarint(e))
           return t
         },
         readPackedSVarint: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readSVarint())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readSVarint())
+          for (t = t || []; this.pos < e;) t.push(this.readSVarint())
           return t
         },
         readPackedBoolean: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readBoolean())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readBoolean())
+          for (t = t || []; this.pos < e;) t.push(this.readBoolean())
           return t
         },
         readPackedFloat: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readFloat())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readFloat())
+          for (t = t || []; this.pos < e;) t.push(this.readFloat())
           return t
         },
         readPackedDouble: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readDouble())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readDouble())
+          for (t = t || []; this.pos < e;) t.push(this.readDouble())
           return t
         },
         readPackedFixed32: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readFixed32())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readFixed32())
+          for (t = t || []; this.pos < e;) t.push(this.readFixed32())
           return t
         },
         readPackedSFixed32: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readSFixed32())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readSFixed32())
+          for (t = t || []; this.pos < e;) t.push(this.readSFixed32())
           return t
         },
         readPackedFixed64: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readFixed64())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readFixed64())
+          for (t = t || []; this.pos < e;) t.push(this.readFixed64())
           return t
         },
         readPackedSFixed64: function (t) {
           if (this.type !== i.Bytes) return t.push(this.readSFixed64())
           var e = a(this)
-          for (t = t || []; this.pos < e; ) t.push(this.readSFixed64())
+          for (t = t || []; this.pos < e;) t.push(this.readSFixed64())
           return t
         },
         skip: function (t) {
           var e = 7 & t
-          if (e === i.Varint) for (; this.buf[this.pos++] > 127; );
+          if (e === i.Varint) for (; this.buf[this.pos++] > 127;);
           else if (e === i.Bytes) this.pos = this.readVarint() + this.pos
           else if (e === i.Fixed32) this.pos += 4
           else {
@@ -12235,7 +12233,7 @@
           this.writeVarint((t << 3) | e)
         },
         realloc: function (t) {
-          for (var e = this.length || 16; e < this.pos + t; ) e *= 2
+          for (var e = this.length || 16; e < this.pos + t;) e *= 2
           if (e !== this.length) {
             var r = new Uint8Array(e)
             ;(r.set(this.buf), (this.buf = r), (this.length = e))
@@ -13343,7 +13341,7 @@
           'string' != typeof t && (t = '' + t)
           var r = t.length
           if (0 === r) return 0
-          for (var n = !1; ; )
+          for (var n = !1; ;)
             switch (e) {
               case 'ascii':
               case 'latin1':
@@ -13373,7 +13371,7 @@
           if (((void 0 === r || r > this.length) && (r = this.length), r <= 0))
             return ''
           if ((r >>>= 0) <= (e >>>= 0)) return ''
-          for (t || (t = 'utf8'); ; )
+          for (t || (t = 'utf8'); ;)
             switch (t) {
               case 'hex':
                 return R(this, e, r)
@@ -13531,7 +13529,7 @@
         }
         function C(t, e, r) {
           r = Math.min(t.length, r)
-          for (var n = [], i = e; i < r; ) {
+          for (var n = [], i = e; i < r;) {
             var o,
               a,
               s,
@@ -13588,7 +13586,7 @@
             if (e <= 4096) return String.fromCharCode.apply(String, t)
             var r = '',
               n = 0
-            for (; n < e; )
+            for (; n < e;)
               r += String.fromCharCode.apply(String, t.slice(n, (n += 4096)))
             return r
           })(n)
@@ -13823,7 +13821,7 @@
             )
               throw new RangeError('Attempt to write outside buffer bounds')
             n || (n = 'utf8')
-            for (var o = !1; ; )
+            for (var o = !1; ;)
               switch (n) {
                 case 'hex':
                   return _(this, t, e, r)
@@ -13930,13 +13928,13 @@
         }),
           (l.prototype.readUIntLE = function (t, e, r) {
             ;((t |= 0), (e |= 0), r || L(t, e, this.length))
-            for (var n = this[t], i = 1, o = 0; ++o < e && (i *= 256); )
+            for (var n = this[t], i = 1, o = 0; ++o < e && (i *= 256);)
               n += this[t + o] * i
             return n
           }),
           (l.prototype.readUIntBE = function (t, e, r) {
             ;((t |= 0), (e |= 0), r || L(t, e, this.length))
-            for (var n = this[t + --e], i = 1; e > 0 && (i *= 256); )
+            for (var n = this[t + --e], i = 1; e > 0 && (i *= 256);)
               n += this[t + --e] * i
             return n
           }),
@@ -13965,13 +13963,13 @@
           }),
           (l.prototype.readIntLE = function (t, e, r) {
             ;((t |= 0), (e |= 0), r || L(t, e, this.length))
-            for (var n = this[t], i = 1, o = 0; ++o < e && (i *= 256); )
+            for (var n = this[t], i = 1, o = 0; ++o < e && (i *= 256);)
               n += this[t + o] * i
             return (n >= (i *= 128) && (n -= Math.pow(2, 8 * e)), n)
           }),
           (l.prototype.readIntBE = function (t, e, r) {
             ;((t |= 0), (e |= 0), r || L(t, e, this.length))
-            for (var n = e, i = 1, o = this[t + --n]; n > 0 && (i *= 256); )
+            for (var n = e, i = 1, o = this[t + --n]; n > 0 && (i *= 256);)
               o += this[t + --n] * i
             return (o >= (i *= 128) && (o -= Math.pow(2, 8 * e)), o)
           }),
@@ -14026,7 +14024,7 @@
               M(this, t, e, r, Math.pow(2, 8 * r) - 1, 0)
             var i = 1,
               o = 0
-            for (this[e] = 255 & t; ++o < r && (i *= 256); )
+            for (this[e] = 255 & t; ++o < r && (i *= 256);)
               this[e + o] = (t / i) & 255
             return e + r
           }),
@@ -14035,7 +14033,7 @@
               M(this, t, e, r, Math.pow(2, 8 * r) - 1, 0)
             var i = r - 1,
               o = 1
-            for (this[e + i] = 255 & t; --i >= 0 && (o *= 256); )
+            for (this[e + i] = 255 & t; --i >= 0 && (o *= 256);)
               this[e + i] = (t / o) & 255
             return e + r
           }),
@@ -14107,7 +14105,7 @@
             var o = 0,
               a = 1,
               s = 0
-            for (this[e] = 255 & t; ++o < r && (a *= 256); )
+            for (this[e] = 255 & t; ++o < r && (a *= 256);)
               (t < 0 && 0 === s && 0 !== this[e + o - 1] && (s = 1),
                 (this[e + o] = (((t / a) >> 0) - s) & 255))
             return e + r
@@ -14120,7 +14118,7 @@
             var o = r - 1,
               a = 1,
               s = 0
-            for (this[e + o] = 255 & t; --o >= 0 && (a *= 256); )
+            for (this[e + o] = 255 & t; --o >= 0 && (a *= 256);)
               (t < 0 && 0 === s && 0 !== this[e + o + 1] && (s = 1),
                 (this[e + o] = (((t / a) >> 0) - s) & 255))
             return e + r
@@ -14317,7 +14315,7 @@
                 })(t).replace(D, '')).length < 2
               )
                 return ''
-              for (; t.length % 4 != 0; ) t += '='
+              for (; t.length % 4 != 0;) t += '='
               return t
             })(t),
           )
@@ -14513,7 +14511,7 @@
           )
         })()
       function f(t, e, r) {
-        for (var n, i, o = r || d, a = 0, s = t.length, l = !1; a < s; )
+        for (var n, i, o = r || d, a = 0, s = t.length, l = !1; a < s;)
           (i = +o(t[(n = a + ((s - a) >> 1))], e)) < 0
             ? (a = n + 1)
             : ((s = n), (l = !i))
@@ -14542,7 +14540,7 @@
         return n - 1
       }
       function m(t, e, r) {
-        for (; e < r; ) {
+        for (; e < r;) {
           var n = t[e]
           ;((t[e] = t[r]), (t[r] = n), ++e, --r)
         }
@@ -14702,7 +14700,7 @@
                   }
                 if ((--o[r], 0 === o[r])) {
                   var u = a[r]
-                  for (delete a[r]; u--; ) this.removeEventListener(r, T)
+                  for (delete a[r]; u--;) this.removeEventListener(r, T)
                   delete o[r]
                 }
                 return n
@@ -14982,7 +14980,7 @@
           return (
             lt(e, t),
             (e.prototype.clear = function () {
-              for (; this.getLength() > 0; ) this.pop()
+              for (; this.getLength() > 0;) this.pop()
             }),
             (e.prototype.extend = function (t) {
               for (var e = 0, r = t.length; e < r; ++e) this.push(t[e])
@@ -16610,7 +16608,7 @@
           }
           return u
         }
-        for (var f = c || [NaN, NaN], d = e + n; d < r; )
+        for (var f = c || [NaN, NaN], d = e + n; d < r;)
           if ((_n(t, d - n, d, n, a, s, f), (p = Ue(a, s, f[0], f[1])) < u)) {
             for (u = p, h = 0; h < n; ++h) l[h] = f[h]
             ;((l.length = n), (d += n))
@@ -16669,7 +16667,7 @@
         }
         var l = new Array(s)
         ;((l[0] = 1), (l[s - 1] = 1))
-        for (var u = [e, r - n], c = 0; u.length > 0; ) {
+        for (var u = [e, r - n], c = 0; u.length > 0;) {
           for (
             var h = u.pop(),
               p = u.pop(),
@@ -16730,7 +16728,7 @@
           if (((s = Fn(t[e], i)), (l = Fn(t[e + 1], i)), (e += n) == r))
             return ((o[a++] = s), (o[a++] = l), a)
         } while (s == u && l == c)
-        for (; e < r; ) {
+        for (; e < r;) {
           var h = Fn(t[e], i),
             p = Fn(t[e + 1], i)
           if (((e += n), h != s || p != l)) {
@@ -17118,7 +17116,7 @@
         return !1
       }
       function oi(t, e, r, n) {
-        for (; e < r - n; ) {
+        for (; e < r - n;) {
           for (var i = 0; i < n; ++i) {
             var o = t[e + i]
             ;((t[e + i] = t[r - n + i]), (t[r - n + i] = o))
@@ -17988,7 +17986,7 @@
         return t && t.parentNode ? t.parentNode.removeChild(t) : null
       }
       function go(t) {
-        for (; t.lastChild; ) t.removeChild(t.lastChild)
+        for (; t.lastChild;) t.removeChild(t.lastChild)
       }
       function yo(t, e) {
         for (var r = t.childNodes, n = 0; ; ++n) {
@@ -18109,7 +18107,7 @@
               var t = Date.now() - this.delay_,
                 e = this.points_.length - 3
               if (this.points_[e + 2] < t) return !1
-              for (var r = e - 3; r > 0 && this.points_[r + 2] > t; ) r -= 3
+              for (var r = e - 3; r > 0 && this.points_[r + 2] > t;) r -= 3
               var n = this.points_[e + 2] - this.points_[r + 2]
               if (n < 1e3 / 60) return !1
               var i = this.points_[e] - this.points_[r],
@@ -23258,7 +23256,7 @@
               return this.entries_.hasOwnProperty(t)
             }),
             (t.prototype.forEach = function (t) {
-              for (var e = this.oldest_; e; )
+              for (var e = this.oldest_; e;)
                 (t(e.value_, e.key_, this), (e = e.newer))
             }),
             (t.prototype.get = function (t, e) {
@@ -23403,7 +23401,7 @@
           return (
             gu(e, t),
             (e.prototype.expireCache = function (t) {
-              for (; this.canExpireCache(); ) {
+              for (; this.canExpireCache();) {
                 if (this.peekLast().getKey() in t) break
                 this.pop().release()
               }
@@ -28367,19 +28365,17 @@
                 Re(u, this.maxSourceExtent_)
               ) {
                 var d = 0
-                if (
-                  !(
-                    f ||
-                    (isFinite(i[0]) &&
-                      isFinite(i[1]) &&
-                      isFinite(o[0]) &&
-                      isFinite(o[1]) &&
-                      isFinite(a[0]) &&
-                      isFinite(a[1]) &&
-                      isFinite(s[0]) &&
-                      isFinite(s[1]))
-                  )
-                )
+                if (!(
+                  f ||
+                  (isFinite(i[0]) &&
+                    isFinite(i[1]) &&
+                    isFinite(o[0]) &&
+                    isFinite(o[1]) &&
+                    isFinite(a[0]) &&
+                    isFinite(a[1]) &&
+                    isFinite(s[0]) &&
+                    isFinite(s[1]))
+                ))
                   if (l > 0) f = !0
                   else if (
                     1 !=
@@ -30092,11 +30088,11 @@
               h = c * a
             switch (o) {
               case gf:
-                for (; s > h || l > h; )
+                for (; s > h || l > h;)
                   (u.push([Math.ceil(s / h), Math.ceil(l / h)]), (h += h))
                 break
               case yf:
-                for (var p = s, f = l; p > h || f > h; )
+                for (var p = s, f = l; p > h || f > h;)
                   (u.push([Math.ceil(p / h), Math.ceil(f / h)]),
                     (p >>= 1),
                     (f >>= 1))
@@ -30671,17 +30667,15 @@
                       var d = t[1],
                         _ = t[2],
                         S = m[f]
-                      if (
-                        !(
-                          void 0 === d ||
-                          void 0 === _ ||
-                          void 0 === S ||
-                          d < 0 ||
-                          Math.ceil(h / S / l) <= d ||
-                          _ < 0 ||
-                          Math.ceil(p / S / u) <= _
-                        )
-                      ) {
+                      if (!(
+                        void 0 === d ||
+                        void 0 === _ ||
+                        void 0 === S ||
+                        d < 0 ||
+                        Math.ceil(h / S / l) <= d ||
+                        _ < 0 ||
+                        Math.ceil(p / S / u) <= _
+                      )) {
                         if (w || x) {
                           var E = d * l * S,
                             T = _ * u * S,
@@ -36122,7 +36116,7 @@
             k = (O + x) / 2
           return ((L[0] = [A, k, (E - o) / 2, F, i]), L)
         }
-        for (var j = 0, N = i.length; j < N; ) {
+        for (var j = 0, N = i.length; j < N;) {
           v()
           var D = Math.atan2(f - g, p - d)
           if ((T && (D += D > 0 ? -I : I), void 0 !== R)) {
@@ -37248,7 +37242,7 @@
                             ).slice(),
                           ),
                           (d += g))
-                      for (y = 0, d = s[2]; d > f[2]; )
+                      for (y = 0, d = s[2]; d > f[2];)
                         ((m = g * ++y),
                           u.push(
                             this.getRenderTransform(
@@ -38184,7 +38178,7 @@
         if (t[r - 1] < i)
           return o ? (((a = t.slice(r - n, r))[n - 1] = i), a) : null
         if (i == t[e + n - 1]) return t.slice(e, e + n)
-        for (var s = e / n, l = r / n; s < l; ) {
+        for (var s = e / n, l = r / n; s < l;) {
           var u = (s + l) >> 1
           i < t[(u + 1) * n - 1] ? (l = u) : (s = u + 1)
         }
@@ -38809,12 +38803,10 @@
               this.loadedExtent_ = t
               var n = this.getSource(),
                 i = Te(this.getExtent() || [-1 / 0, -1 / 0, 1 / 0, 1 / 0], t)
-              if (
-                !(
-                  (this.renderedExtent_ && ue(this.renderedExtent_, i)) ||
-                  ((this.renderedExtent_ = i), Ie(i))
-                )
-              ) {
+              if (!(
+                (this.renderedExtent_ && ue(this.renderedExtent_, i)) ||
+                ((this.renderedExtent_ = i), Ie(i))
+              )) {
                 var o = xe(i),
                   a = (e * e) / 4
                 ;((!this.projection_ || !Xr(this.projection_, r)) &&
@@ -39001,17 +38993,17 @@
                 (c = 0),
                 o)
               )
-                for (; (f -= i) >= w && c++ < y; )
+                for (; (f -= i) >= w && c++ < y;)
                   h = this.addMeridian_(f, x, _, n, t, h)
               else
-                for (; f != this.minLon_ && c++ < y; )
+                for (; f != this.minLon_ && c++ < y;)
                   ((f = Math.max(f - i, this.minLon_)),
                     (h = this.addMeridian_(f, x, _, n, t, h)))
               if (((f = Ne(d, this.minLon_, this.maxLon_)), (c = 0), o))
-                for (; (f += i) <= b && c++ < y; )
+                for (; (f += i) <= b && c++ < y;)
                   h = this.addMeridian_(f, x, _, n, t, h)
               else
-                for (; f != this.maxLon_ && c++ < y; )
+                for (; f != this.maxLon_ && c++ < y;)
                   ((f = Math.min(f + i, this.maxLon_)),
                     (h = this.addMeridian_(f, x, _, n, t, h)))
               for (
@@ -40048,7 +40040,7 @@
         else if (2 === t) e.features.push(r.pos)
         else if (3 === t) e.keys.push(r.readString())
         else if (4 === t) {
-          for (var n = null, i = r.readVarint() + r.pos; r.pos < i; )
+          for (var n = null, i = r.readVarint() + r.pos; r.pos < i;)
             n =
               1 === (t = r.readVarint() >> 3)
                 ? r.readString()
@@ -40071,7 +40063,7 @@
       function im(t, e, r) {
         if (1 == t) e.id = r.readVarint()
         else if (2 == t)
-          for (var n = r.readVarint() + r.pos; r.pos < n; ) {
+          for (var n = r.readVarint() + r.pos; r.pos < n;) {
             var i = e.layer.keys[r.readVarint()],
               o = e.layer.values[r.readVarint()]
             e.properties[i] = o
@@ -43676,12 +43668,10 @@
                     x[o(h.geometry)] = !0
                     for (var w = 1, S = n.length; w < S; ++w) {
                       var E = n[w].segment
-                      if (
-                        !(
-                          (Cr(p[0], E[0]) && Cr(p[1], E[1])) ||
-                          (Cr(p[0], E[1]) && Cr(p[1], E[0]))
-                        )
-                      )
+                      if (!(
+                        (Cr(p[0], E[0]) && Cr(p[1], E[1])) ||
+                        (Cr(p[0], E[1]) && Cr(p[1], E[0]))
+                      ))
                         break
                       var T = o(n[w].geometry)
                       T in x || ((x[T] = !0), (y[o(E)] = !0))
@@ -44576,7 +44566,7 @@
         void 0 !== i
           ? ((a = i), (s = void 0 !== o ? o : 0))
           : ((a = []), (s = 0))
-        for (var l = e; l < r; ) {
+        for (var l = e; l < r;) {
           var u = t[l++]
           ;((a[s++] = t[l++]), (a[s++] = u))
           for (var c = 2; c < n; ++c) a[s++] = t[l++]
@@ -44662,7 +44652,7 @@
                   On(i, 0, t[r], e.length),
                   ai(i, 0, i.length, e.length) ? o.push([t[r]]) : a.push(t[r]))
               }
-              for (; a.length; ) {
+              for (; a.length;) {
                 var s = a.shift(),
                   l = !1
                 for (r = o.length - 1; r >= 0; r--) {
@@ -48806,7 +48796,7 @@
           i = r || 1e5,
           o = new Array(e)
         for (n = 0; n < e; ++n) o[n] = 0
-        for (var a = 0, s = t.length; a < s; )
+        for (var a = 0, s = t.length; a < s;)
           for (n = 0; n < e; ++n, ++a) {
             var l = t[a],
               u = l - o[n]
@@ -48819,7 +48809,7 @@
           i = r || 1e5,
           o = new Array(e)
         for (n = 0; n < e; ++n) o[n] = 0
-        for (var a = AS(t, i), s = 0, l = a.length; s < l; )
+        for (var a = AS(t, i), s = 0, l = a.length; s < l;)
           for (n = 0; n < e; ++n, ++s) ((o[n] += a[s]), (a[s] = o[n]))
         return a
       }
@@ -48860,7 +48850,7 @@
         return e
       }
       function GS(t) {
-        for (var e, r = ''; t >= 32; )
+        for (var e, r = ''; t >= 32;)
           ((e = 63 + (32 | (31 & t))), (r += String.fromCharCode(e)), (t >>= 5))
         return ((e = t + 63), (r += String.fromCharCode(e)))
       }
@@ -50657,22 +50647,22 @@
               throw new Error(this.formatErrorMessage_())
             }),
             (t.prototype.parsePointList_ = function () {
-              for (var t = [this.parsePoint_()]; this.match(WT); )
+              for (var t = [this.parsePoint_()]; this.match(WT);)
                 t.push(this.parsePoint_())
               return t
             }),
             (t.prototype.parsePointTextList_ = function () {
-              for (var t = [this.parsePointText_()]; this.match(WT); )
+              for (var t = [this.parsePointText_()]; this.match(WT);)
                 t.push(this.parsePointText_())
               return t
             }),
             (t.prototype.parseLineStringTextList_ = function () {
-              for (var t = [this.parseLineStringText_()]; this.match(WT); )
+              for (var t = [this.parseLineStringText_()]; this.match(WT);)
                 t.push(this.parseLineStringText_())
               return t
             }),
             (t.prototype.parsePolygonTextList_ = function () {
-              for (var t = [this.parsePolygonText_()]; this.match(WT); )
+              for (var t = [this.parsePolygonText_()]; this.match(WT);)
                 t.push(this.parsePolygonText_())
               return t
             }),

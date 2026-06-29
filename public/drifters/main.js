@@ -442,12 +442,10 @@ class DrifterApp {
     let prev = this.selected
     this.selected = selection
 
-    if (
-      !(
-        prev.length === selection.length &&
-        prev.every((e) => selection.includes(e))
-      )
-    ) {
+    if (!(
+      prev.length === selection.length &&
+      prev.every((e) => selection.includes(e))
+    )) {
       if (!this.animating) {
         this.redrawDrifters()
       }
