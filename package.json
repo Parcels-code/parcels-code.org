@@ -1,5 +1,5 @@
 {
-  "name": "oceanparcels_website",
+  "name": "parcels-code.org",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OceanParcels/oceanparcels_website.git"
+    "url": "git+https://github.com/Parcels-code/parcels-code.org.git"
   },
   "author": "Parcels Developers & Contributors",
   "license": "Apache 2.0",

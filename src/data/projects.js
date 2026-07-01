@@ -3,7 +3,7 @@ export const Projects = [
     name: 'PlasticParcels',
     description:
       'PlasticParcels simulates the transport and dispersion of plastics in the ocean.',
-    repo: 'https://github.com/OceanParcels/plasticparcels',
+    repo: 'https://github.com/Parcels-code/plasticparcels',
     homepage: 'https://plastic.parcels-code.org/en/latest/',
     logo_light: '/projects/plasticparcelslogo.png',
     logo_dark: '/projects/plasticparcelslogo_dia.png',
@@ -12,7 +12,7 @@ export const Projects = [
     name: 'VirtualShip Parcels',
     description:
       'VirtualShipParcels is a command-line simulator to plan and conduct a virtual research expedition.',
-    repo: 'https://github.com/OceanParcels/virtualship',
+    repo: 'https://github.com/Parcels-code/virtualship',
     homepage: 'https://virtualship.parcels-code.org',
     logo_light: '/projects/virtual_ship_logo.png',
     logo_dark: '/projects/virtual_ship_logo_dia.png',
