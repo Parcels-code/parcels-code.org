@@ -1,5 +1,5 @@
 ---
-title: 'Parcels v4.0-preview is available! 🚀'
+title: 'Parcels v4.0 is available! 🚀'
 date: '2026-08-01'
 authors:
   - name: Erik van Sebille
@@ -8,10 +8,10 @@ authors:
     github: VeckotheGecko
   - name: Joe Schoonover
     github: fluidnumericsJoe
-summary: 'Parcels v4.0-preview is now available, bringing exciting new features and improvements to the Parcels framework.'
+summary: 'Parcels v4.0 is now available, bringing exciting new features and improvements to the Parcels framework.'
 ---
 
-We are very excited to announce that Parcels v4-preview is now available for performing Lagrangian simulations in hydrodynamic flows. Parcels v4 is a complete redesign of the [Parcels code](https://parcels-code.org) and is designed to be more flexible and extensible than previous versions.
+We are very excited to announce that Parcels v4.0 is now available for performing Lagrangian simulations in hydrodynamic flows. Parcels v4 is a complete redesign of the [Parcels code](https://parcels-code.org) and is designed to be more flexible and extensible than previous versions.
 
 With this release - Parcels is a pure Python package that leverages the full power of the [Pangeo ecosystem](https://pangeo.io/) of geoscience python tools such as Xarray, Dask and Zarr. Particle advection and interpolation are now vectorised operations, which improves performance and makes [particle-particle interactions](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_interaction.html) easier to implement.
 
@@ -26,7 +26,7 @@ We have also changed the [output format to Parquet](https://docs.parcels-code.or
 
 See the full migration guide from Parcels v3 to v4 [here](https://docs.parcels-code.org/en/main/user_guide/v4-migration.html).
 
-Note that Parcels v4-preview is an early release to gather user feedback and should not be considered stable. We welcome feedback from the community, and encourage users to try out the new version and [report any issues or suggestions](https://github.com/Parcels-Code/parcels/issues) or connect with us on our [Zulip CLAM community](https://clam-community.github.io).
+Note that Parcels v4.0 is an early release to gather user feedback and should not be considered stable. We welcome feedback from the community, and encourage users to try out the new version and [report any issues or suggestions](https://github.com/Parcels-Code/parcels/issues) or connect with us on our [Zulip CLAM community](https://clam-community.github.io).
 
 Once we've incorporated this feedback, improved performance, and implemented a few outstanding features, we aim to release a stable version of Parcels.
 
