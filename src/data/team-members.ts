@@ -50,13 +50,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/JimenaMedinaRubio.jpeg',
   },
   {
-    name: 'Marlies Pos',
-    position: 'BSc student',
-    description:
-      'Marlies explores how partially-submerged items are transported by ocean currents and winds.',
-    image: 'utrecht-team/MarliesPos.jpg',
-  },
-  {
     name: 'Marc Schneiter',
     position: 'PhD candidate',
     description:
@@ -69,13 +62,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     description:
       'Viktor investigates how plastic pollution moves through the Wadden Sea.',
     image: 'utrecht-team/ViktorvanBilsen.jpg',
-  },
-  {
-    name: 'Luuk van den Hoven',
-    position: 'BSc student',
-    description:
-      'Luuk explores how the Parcels code can be accelerated using GPUs.',
-    image: 'utrecht-team/LuukvandenHoven.png',
   },
   {
     name: 'Arjen van Mullem',
@@ -251,6 +237,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
     position: 'BSc student',
   },
   {
+    name: 'Luuk van den Hoven',
+    position: 'BSc student',
+  },
+  {
     name: 'Michal Janssen',
     position: 'BSc student',
     links: {
@@ -348,6 +338,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
     links: {
       Thesis: 'https://doi.org/10.33540/2819',
     },
+  },
+  {
+    name: 'Marlies Pos',
+    position: 'BSc student',
   },
   {
     name: 'Daan Reijnders',
