@@ -104,6 +104,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   {
     name: 'Esmee van Amelsfort',
     position: 'MSc student',
+    links: {
+      Thesis:
+        'https://studenttheses.uu.nl/items/06d156c7-d721-4d93-b54c-06371a4c52b8',
+    },
   },
   {
     name: 'Margo van Asschenbergh',
