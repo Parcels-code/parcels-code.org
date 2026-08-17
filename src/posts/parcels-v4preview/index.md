@@ -42,6 +42,6 @@ Once we've incorporated this feedback, improved performance, and implemented a f
   [FluidNumerics](https://www.fluidnumerics.com/) and the [University of
   Utrecht](https://www.uu.nl/en) in the Netherlands. The development was led by
   Nick Hodgskin, Joe Schoonover and Erik van Sebille, with contributions from
-  many others, including Willi Rath, Daniel Lizarbe, Reint Fischer, and Michael
-  Denes.
+  many others, including Willi Rath, Daniel Lizarbe, Reint Fischer, Wyatt
+  Sieminski, and Michael Denes.
 </div>
