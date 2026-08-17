@@ -1,6 +1,6 @@
 ---
 title: 'Parcels v4.0 is available! 🚀'
-date: '2026-08-01'
+date: '2026-09-01'
 authors:
   - name: Erik van Sebille
     github: erikvansebille
