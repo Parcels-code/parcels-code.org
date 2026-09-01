@@ -398,6 +398,13 @@ export const PriorTeamMembers: PriorTeamMember[] = [
     },
   },
   {
+    name: 'Jesse van Son',
+    position: 'MSc student',
+    links: {
+      Thesis: 'https://studenttheses.uu.nl/handle/20.500.12932/52479',
+    },
+  },
+  {
     name: 'Miriam Sterl',
     position: 'BSc student',
     links: {
