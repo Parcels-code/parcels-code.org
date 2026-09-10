@@ -28,7 +28,7 @@ See the full migration guide from Parcels v3 to v4 [here](https://docs.parcels-c
 
 Note that Parcels v4.0 is an early release to gather user feedback and should not be considered stable. We welcome feedback from the community, and encourage users to try out the new version and [report any issues or suggestions](https://github.com/Parcels-Code/parcels/issues) or connect with us on our [Zulip CLAM community](https://clam-community.github.io).
 
-Also note that the performance of Parcels v4 is currently slower than Parcels v3 for large (> ~100,000) numbers of particles. We are working on [improving performance](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_performance.html) and will release updates as we make progress.
+Also note that the performance of Parcels v4 is currently slower than Parcels v3 for large (> ~100,000) numbers of particles. We are working on [improving performance](https://docs.parcels-code.org/en/latest/user_guide/examples/explanation_performance.html) and will release updates as we make progress.
 
 Once we've incorporated this feedback, improved performance, and implemented a few outstanding features, we aim to release a stable version of Parcels.
 
