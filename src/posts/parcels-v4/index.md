@@ -17,14 +17,14 @@ With this release - Parcels is a pure Python package that leverages the full pow
 
 Key improvements include:
 
-1. Support for [unstructured grids](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_grids.html).
-2. More flexibility in writing Kernels (including [using python functions in Kernels](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_gsw_density.html) and support for writing output in a Kernel)
-3. Support for [user-defined interpolators](https://docs.parcels-code.org/en/main/user_guide/examples/explanation_interpolation.html).
-4. More robust and flexible support for [nested grids](https://docs.parcels-code.org/en/main/user_guide/examples/tutorial_nestedgrids.html).
+1. Support for [unstructured grids](https://docs.parcels-code.org/en/latest/user_guide/examples/explanation_grids.html).
+2. More flexibility in writing Kernels (including [using python functions in Kernels](https://docs.parcels-code.org/en/latest/user_guide/examples/tutorial_gsw_density.html) and support for [writing output in a Kernel](https://docs.parcels-code.org/en/latest/user_guide/examples/tutorial_write_in_kernel.html))
+3. Support for [user-defined interpolators](https://docs.parcels-code.org/en/latest/user_guide/examples/explanation_interpolation.html).
+4. More robust and flexible support for [nested grids](https://docs.parcels-code.org/en/latest/user_guide/examples/tutorial_nestedgrids.html).
 
-We have also changed the [output format to Parquet](https://docs.parcels-code.org/en/main/getting_started/tutorial_output.html#reading-the-output-file), which is a tabular format more suited for writing and reading trajectory data.
+We have also changed the [output format to Parquet](https://docs.parcels-code.org/en/latest/user_guide/getting_started/tutorial_output.html#reading-the-output-file), which is a tabular format more suited for writing and reading trajectory data.
 
-See the full migration guide from Parcels v3 to v4 [here](https://docs.parcels-code.org/en/main/user_guide/v4-migration.html).
+See the full migration guide from Parcels v3 to v4 [here](https://docs.parcels-code.org/en/latest/user_guide/v4-migration.html).
 
 Note that Parcels v4.0 is an early release to gather user feedback and should not be considered stable. We welcome feedback from the community, and encourage users to try out the new version and [report any issues or suggestions](https://github.com/Parcels-Code/parcels/issues) or connect with us on our [Zulip CLAM community](https://clam-community.github.io).
 
