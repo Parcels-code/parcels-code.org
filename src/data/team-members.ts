@@ -16,24 +16,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/MeikeBos.jpg',
   },
   {
-    name: 'Emma Daniëls',
-    position: 'Postdoctoral researcher',
-    description: 'Emma leads the development of the Virtual Ship Classroom.',
-    image: 'utrecht-team/EmmaDaniels.jpg',
-  },
-  {
-    name: 'Michael Denes',
-    position: 'Postdoctoral researcher',
-    description:
-      'Michael investigates how marine pollution can be computed in the Copernicus Marine Service.',
-    links: {
-      github: 'https://github.com/michaeldenes',
-      researchgate: 'https://www.researchgate.net/profile/Michael-Denes',
-      googlescholar: 'https://scholar.google.com/citations?user=KIx5ROoAAAAJ',
-    },
-    image: 'utrecht-team/MichaelDenes.jpg',
-  },
-  {
     name: 'Nick Hodgskin',
     position: 'Research software engineer',
     description: 'Nick supports the development and use of the parcels code.',
@@ -173,7 +155,15 @@ export const PriorTeamMembers: PriorTeamMember[] = [
     position: 'MSc student',
   },
   {
+    name: 'Emma Daniëls',
+    position: 'Postdoctoral researcher',
+  },
+  {
     name: 'Philippe Delandmeter',
+    position: 'Postdoctoral researcher',
+  },
+  {
+    name: 'Michael Denes',
     position: 'Postdoctoral researcher',
   },
   {
