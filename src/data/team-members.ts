@@ -9,6 +9,13 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/JamieAtkins.jpg',
   },
   {
+    name: 'Paolo Bellino Pasquali',
+    position: 'Visiting MSc student',
+    description:
+      'Paolo develops algorithms for simulating virtual particles very close to complex deep bathymetry.',
+    image: 'utrecht-team/PaoloBellinoPasquali.jpg',
+  },
+  {
     name: 'Meike Bos',
     position: 'Postdoctoral researcher',
     description:
