@@ -9,6 +9,13 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     image: 'utrecht-team/JamieAtkins.jpg',
   },
   {
+    name: 'Paolo Bellino Pasquali',
+    position: 'Visiting MSc student',
+    description:
+      'Paolo develops algorithms for simulating virtual particles very close to complex deep bathymetry.',
+    image: 'utrecht-team/PaoloBellinoPasquali.jpg',
+  },
+  {
     name: 'Meike Bos',
     position: 'Postdoctoral researcher',
     description:
@@ -44,13 +51,6 @@ export const CurrentTeamMembers: CurrentTeamMember[] = [
     description:
       'Viktor investigates how plastic pollution moves through the Wadden Sea.',
     image: 'utrecht-team/ViktorvanBilsen.jpg',
-  },
-  {
-    name: 'Arjen van Mullem',
-    position: 'MSc student',
-    description:
-      'Arjen explores how to use Machine Learning to analyse Lagrangian particle trajectories.',
-    image: 'utrecht-team/ArjenvanMullem.jpg',
   },
   {
     name: 'Erik van Sebille',
@@ -280,6 +280,10 @@ export const PriorTeamMembers: PriorTeamMember[] = [
   },
   {
     name: 'Sophie van Mil',
+    position: 'MSc student',
+  },
+  {
+    name: 'Arjen van Mullem',
     position: 'MSc student',
   },
   {
