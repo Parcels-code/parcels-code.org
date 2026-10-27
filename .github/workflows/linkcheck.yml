@@ -35,25 +35,22 @@ jobs:
       - run: echo "${{ steps.readReport.outputs.FILE_CONTENT }}"
       - name: Update link tracking issue (update invalid links)
         if: env.lychee_exit_code != 0
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ env.LINK_TRACKING_ISSUE_NUMBER }}
-          state: 'open'
-          body: ${{ steps.readReport.outputs.FILE_CONTENT }}
-          update-mode: 'replace'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_BODY: ${{ steps.readReport.outputs.FILE_CONTENT }}
+        run: |
+          gh api --method PATCH "repos/${{ github.repository }}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
+            -f state=open \
+            -f body="${ISSUE_BODY}"
 
       - name: Update link tracking issue (no invalid links)
         if: env.lychee_exit_code == 0
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ env.LINK_TRACKING_ISSUE_NUMBER }}
-          state: 'closed'
-          body: 'No invalid links found! 🤖'
-          update-mode: 'replace'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api --method PATCH "repos/${{ github.repository }}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
+            -f state=closed \
+            -f body='No invalid links found! 🤖'
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
