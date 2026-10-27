@@ -26,11 +26,13 @@ const feed = new Feed({
 })
 
     allPostsData.forEach(post => {
+        const postUrl = `${blogUrl}/${post.id}`
         feed.addItem({
             title: post.title,
             date: new Date(post.date),
-            link: `${blogUrl}/${post.id}`,
-            id: post.id,
+            link: postUrl,
+            // feed >= 6 requires item ids to be valid URLs (Atom <id> must be an IRI)
+            id: postUrl,
             author: post.authors,
             description: post.description,
         })

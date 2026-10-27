@@ -117,7 +117,7 @@ export default function Blog({ allPostsData }) {
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsMetadata()
-  generateRssFeed(allPostsData)
+  await generateRssFeed(allPostsData)
   return {
     props: {
       allPostsData,
