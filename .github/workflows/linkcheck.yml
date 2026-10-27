@@ -38,16 +38,18 @@ jobs:
         run: |
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           echo "FILE_CONTENT<<$EOF" >> $GITHUB_OUTPUT
-          echo "$(cat ${{ env.LYCHEE_REPORT_FILE }})" >> $GITHUB_OUTPUT
+          echo "$(cat "${LYCHEE_REPORT_FILE}")" >> $GITHUB_OUTPUT
           echo "$EOF" >> $GITHUB_OUTPUT
-      - run: echo "${{ steps.readReport.outputs.FILE_CONTENT }}"
+      - env:
+          FILE_CONTENT: ${{ steps.readReport.outputs.FILE_CONTENT }}
+        run: echo "${FILE_CONTENT}"
       - name: Update link tracking issue (update invalid links)
         if: steps.lychee.outputs.exit_code != 0
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_BODY: ${{ steps.readReport.outputs.FILE_CONTENT }}
         run: |
-          gh api --method PATCH "repos/${{ github.repository }}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
+          gh api --method PATCH "repos/${GITHUB_REPOSITORY}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
             -f state=open \
             -f body="${ISSUE_BODY}"
 
@@ -56,7 +58,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh api --method PATCH "repos/${{ github.repository }}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
+          gh api --method PATCH "repos/${GITHUB_REPOSITORY}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
             -f state=closed \
             -f body='No invalid links found! 🤖'
 
