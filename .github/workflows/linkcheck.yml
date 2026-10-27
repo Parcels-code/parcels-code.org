@@ -18,14 +18,18 @@ jobs:
       LYCHEE_REPORT_FILE: ./lychee/out.md
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@v1.8.0
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          # v2 fails the step on broken links by default; keep going so the
+          # tracking issue gets updated below.
+          fail: false
 
       - name: Read Lychee report
-        if: env.lychee_exit_code != 0
+        if: steps.lychee.outputs.exit_code != 0
         id: readReport
         run: |
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
@@ -34,29 +38,26 @@ jobs:
           echo "$EOF" >> $GITHUB_OUTPUT
       - run: echo "${{ steps.readReport.outputs.FILE_CONTENT }}"
       - name: Update link tracking issue (update invalid links)
-        if: env.lychee_exit_code != 0
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ env.LINK_TRACKING_ISSUE_NUMBER }}
-          state: 'open'
-          body: ${{ steps.readReport.outputs.FILE_CONTENT }}
-          update-mode: 'replace'
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_BODY: ${{ steps.readReport.outputs.FILE_CONTENT }}
+        run: |
+          gh api --method PATCH "repos/${{ github.repository }}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
+            -f state=open \
+            -f body="${ISSUE_BODY}"
 
       - name: Update link tracking issue (no invalid links)
-        if: env.lychee_exit_code == 0
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ env.LINK_TRACKING_ISSUE_NUMBER }}
-          state: 'closed'
-          body: 'No invalid links found! 🤖'
-          update-mode: 'replace'
+        if: steps.lychee.outputs.exit_code == 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api --method PATCH "repos/${{ github.repository }}/issues/${LINK_TRACKING_ISSUE_NUMBER}" \
+            -f state=closed \
+            -f body='No invalid links found! 🤖'
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lychee-report
           path: ${{ env.LYCHEE_REPORT_FILE }}
