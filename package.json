@@ -35,7 +35,7 @@
     "glob": "^13.0.6",
     "gray-matter": "^4.0.3",
     "isomorphic-dompurify": "~3.19.0",
-    "katex": "^0.16.47",
+    "katex": "^0.19.1",
     "next": "^14.2.35",
     "next-mdx-remote": "^5.0.0",
     "react": "^18.3.1",
@@ -57,5 +57,8 @@
     "playwright": "^1.64.1",
     "typescript": "^5.9.3",
     "webpack": "^5.112.2"
+  },
+  "overrides": {
+    "katex": "$katex"
   }
 }
