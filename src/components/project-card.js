@@ -1,5 +1,5 @@
 import { Link } from '@/components/mdx'
-import { Box, Card, CardBody, Stack, Text } from '@chakra-ui/react'
+import { Box, Card, Stack, Text } from '@chakra-ui/react'
 import { ColorModeImage } from '@/components/ColorModeImage'
 
 export const ProjectCard = ({
@@ -11,12 +11,13 @@ export const ProjectCard = ({
   logo_dark,
 }) => {
   return (
-    <Card
-      as={Link}
-      href={repo || homepage}
+    <Card.Root
+      asChild
+      display='flex'
       p={4}
       h='full'
       rounded='lg'
+      borderWidth={0}
       transitionProperty='all'
       transitionDuration='slower'
       transitionTimingFunction='ease-out'
@@ -28,31 +29,26 @@ export const ProjectCard = ({
         textDecoration: 'none',
       }}
     >
-      <CardBody p={0} h='full'>
-        <Stack
-          spacing={2}
-          direction={'column'}
-          justify={'space-between'}
-          h='full'
-          gap={0}
-        >
-          <Box>
-            <ColorModeImage
-              h={'128'}
-              w={'full'}
-              lightSrc={logo_light}
-              darkSrc={logo_dark}
-              alt={name}
-              layout='fill'
-              objectFit='contain'
-            />
+      <Link href={repo || homepage}>
+        <Card.Body p={0} h='full'>
+          <Stack direction={'column'} justify={'space-between'} h='full' gap={0}>
+            <Box>
+              <ColorModeImage
+                h={'128px'}
+                w={'full'}
+                lightSrc={logo_light}
+                darkSrc={logo_dark}
+                alt={name}
+                objectFit='contain'
+              />
 
-            <Text my={4} noOfLines={4}>
-              {description}
-            </Text>
-          </Box>
-        </Stack>
-      </CardBody>
-    </Card>
+              <Text my={4} lineClamp={4}>
+                {description}
+              </Text>
+            </Box>
+          </Stack>
+        </Card.Body>
+      </Link>
+    </Card.Root>
   )
 }

@@ -1,23 +1,11 @@
-import {
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
-  Box,
-  CloseButton,
-  useDisclosure,
-} from '@chakra-ui/react'
+import { Alert, Box, CloseButton, useDisclosure } from '@chakra-ui/react'
 
 export const Banner = ({ title, description, children }) => {
-  const {
-    isOpen: isVisible,
-    onClose,
-    onOpen,
-  } = useDisclosure({ defaultIsOpen: true })
+  const { open: isVisible, onClose } = useDisclosure({ defaultOpen: true })
 
   return isVisible ? (
     <Box pt={16} px={20}>
-      <Alert
+      <Alert.Root
         status='info'
         variant='solid'
         flexDirection='row'
@@ -25,10 +13,10 @@ export const Banner = ({ title, description, children }) => {
         justifyContent='center'
         textAlign='center'
       >
-        <AlertIcon />
+        <Alert.Indicator />
 
-        <AlertTitle>{title}</AlertTitle>
-        <AlertDescription>{description}</AlertDescription>
+        <Alert.Title>{title}</Alert.Title>
+        <Alert.Description>{description}</Alert.Description>
         {children}
 
         <CloseButton
@@ -38,7 +26,7 @@ export const Banner = ({ title, description, children }) => {
           top={-1}
           onClick={onClose}
         />
-      </Alert>
+      </Alert.Root>
     </Box>
   ) : (
     <></>

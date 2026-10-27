@@ -1,28 +1,25 @@
+import { ColorModeImage } from '@/components/ColorModeImage'
+import { ColorModeToggle } from '@/components/ColorModeToggle'
 import { DesktopNav } from '@/components/desktop-nav'
 import { Link } from '@/components/mdx'
 import { MobileNav } from '@/components/mobile-nav'
 import { menuItems } from '@/data/menu-items'
-import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 import {
   Box,
   Container,
   Flex,
   IconButton,
-  Image,
   Stack,
-  useColorMode,
-  useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react'
-import { ColorModeImage } from '@/components/ColorModeImage'
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
+import { LuMenu, LuX } from 'react-icons/lu'
 
 export const Header = () => {
   const navItems = React.useMemo(() => menuItems, [])
 
-  const { isOpen, onToggle } = useDisclosure()
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { open: isOpen, onToggle } = useDisclosure()
 
   return (
     <Box>
@@ -37,13 +34,11 @@ export const Header = () => {
         justify={'center'}
         css={{
           backdropFilter: 'saturate(180%) blur(5px)',
-          backgroundColor: useColorModeValue(
-            'rgba(255, 255, 255, 0.8)',
-            'rgba(26, 32, 44, 0.8)',
-          ),
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          _dark: { backgroundColor: 'rgba(26, 32, 44, 0.8)' },
         }}
       >
-        <Container as={Flex} maxW={'container.lg'} align={'center'}>
+        <Container display='flex' maxW={'container.lg'} alignItems={'center'}>
           <Flex
             flex={{ base: '0', md: 'auto' }}
             ml={{ base: -2 }}
@@ -52,43 +47,32 @@ export const Header = () => {
           >
             <IconButton
               onClick={onToggle}
-              icon={
-                isOpen ? (
-                  <CloseIcon w={3} h={3} />
-                ) : (
-                  <HamburgerIcon w={5} h={5} />
-                )
-              }
               variant={'ghost'}
               size={'sm'}
               aria-label={'Toggle Navigation'}
-            />
+            >
+              {isOpen ? <LuX /> : <LuMenu />}
+            </IconButton>
           </Flex>
 
           <Flex
             flex={{ base: 1, md: 'auto' }}
             justify={{ base: 'start', md: 'start' }}
           >
-            <Stack
-              as={Link}
-              href={'/'}
-              direction={'row'}
-              alignItems={'center'}
-              spacing={{ base: 2, sm: 4 }}
-            >
+            <Link href={'/'} display={'flex'} alignItems={'center'}>
               <ColorModeImage
                 w={48}
                 lightSrc={'/parcels-assets/logo-horo.svg'}
                 darkSrc={'/parcels-assets/logo-horo_dia.svg'}
                 alt={'parcels logo'}
               />
-            </Stack>
+            </Link>
           </Flex>
 
           <Stack
             direction={'row'}
             align={'center'}
-            spacing={{ base: 6, md: 8 }}
+            gap={{ base: 6, md: 8 }}
             flex={{ base: 1, md: 'auto' }}
             justify={'flex-end'}
           >
@@ -96,24 +80,22 @@ export const Header = () => {
               navItems={navItems}
               display={{ base: 'none', md: 'flex' }}
             />
-            <Stack direction={'row'} align={'center'} spacing={0}>
+            <Stack direction={'row'} align={'center'} gap={0}>
               <IconButton
-                as={'a'}
-                href={'https://github.com/Parcels-code/parcels'}
-                target={'_blank'}
-                rel={'noopener noreferrer'}
+                asChild
                 aria-label={'Open GitHub repository'}
-                icon={<FaGithub />}
                 variant={'ghost'}
                 size={'lg'}
-              />
-              <IconButton
-                aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
-                icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-                onClick={toggleColorMode}
-                variant={'ghost'}
-                size={'lg'}
-              />
+              >
+                <a
+                  href={'https://github.com/Parcels-code/parcels'}
+                  target={'_blank'}
+                  rel={'noopener noreferrer'}
+                >
+                  <FaGithub />
+                </a>
+              </IconButton>
+              <ColorModeToggle size={'lg'} />
             </Stack>
           </Stack>
         </Container>

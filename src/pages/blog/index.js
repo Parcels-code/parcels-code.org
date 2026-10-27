@@ -1,21 +1,19 @@
 import {
-  Avatar,
   AvatarGroup,
   Box,
   Container,
-  Divider,
   Heading,
+  Separator,
   Spacer,
   Stack,
-  StackDivider,
+  StackSeparator,
   Text,
-  useColorModeValue,
   VStack,
-  useColorMode,
 } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion'
 
+import { AuthorAvatar } from '@/components/author-avatar'
 import { Layout } from '@/components/layout'
 import { Link } from '@/components/mdx'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
@@ -32,9 +30,10 @@ const SinglePost = ({ page }) => {
       transition={{ duration: 0.2 }}
     >
       <Stack
-        spacing='2'
+        gap='2'
         align='stretch'
-        my={{ base: 5, md: 10 }}
+        // v2 used negative stack spacing to pull posts towards the dividers
+        my={{ base: 1, md: 6 }}
         direction={{ base: 'column', md: 'row' }}
       >
         <Box>
@@ -44,29 +43,21 @@ const SinglePost = ({ page }) => {
 
           <Text
             fontSize={'sm'}
-            color={
-              useColorMode().colorMode === 'dark' ? 'gray.300' : 'gray.600'
-            }
+            color={{ base: 'gray.600', _dark: 'gray.300' }}
             py={4}
           >
             {formatDate(date)} ({distanceToNow(date)})
           </Text>
 
-          <Text noOfLines={3} py={4}>
+          <Text lineClamp={3} py={4}>
             {page.summary}
           </Text>
         </Box>
         <Spacer />
         <Box>
-          <AvatarGroup size={'lg'}>
+          <AvatarGroup size={'2xl'} gap={0} spaceX={'-3'}>
             {page.authors.map((author) => {
-              return (
-                <Avatar
-                  key={author.name}
-                  src={`https://github.com/${author.github}.png`}
-                  name={author.name}
-                />
-              )
+              return <AuthorAvatar key={author.name} author={author} />
             })}
           </AvatarGroup>
         </Box>
@@ -90,25 +81,25 @@ export default function Blog({ allPostsData }) {
             Blog
           </Heading>
           <Text
-            color={useColorModeValue('gray.800', 'white')}
+            color={{ base: 'gray.800', _dark: 'white' }}
             fontSize={'lg'}
             textAlign={'center'}
           >
             Announcements and news from the Parcels team.
           </Text>
 
-          <Divider my={4} borderColor='gray.200' />
+          <Separator my={4} borderColor='gray.200' />
 
           <VStack
-            divider={<StackDivider borderColor='gray.200' />}
-            spacing={-4}
+            separator={<StackSeparator borderColor='gray.200' />}
+            gap={0}
             align='stretch'
           >
             {allPostsData.map((page) => {
               return <SinglePost key={page.id} page={page} />
             })}
           </VStack>
-          <Divider my={2} borderColor='gray.200' />
+          <Separator my={2} borderColor='gray.200' />
         </Container>
       </Box>
     </Layout>

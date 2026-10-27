@@ -24,7 +24,6 @@ const Accessibility = () => {
               <Link
                 href='https://wave.webaim.org/extension/'
                 color='blue.500'
-                isExternal
               >
                 WAVE (Web Accessibility Evaluation Tool)
               </Link>{' '}
@@ -36,7 +35,6 @@ const Accessibility = () => {
               <Link
                 href={'https://www.uu.nl/staff/EvanSebille'}
                 color='blue.500'
-                isExternal
               >
                 Erik van Sebille
               </Link>{' '}

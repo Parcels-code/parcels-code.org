@@ -1,20 +1,22 @@
-import { IconButton, useColorMode } from '@chakra-ui/react'
-import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import { ClientOnly, IconButton, Skeleton } from '@chakra-ui/react'
+import { LuMoon, LuSun } from 'react-icons/lu'
 
-export function ColorModeToggle() {
+import { useColorMode } from '@/components/ui/color-mode'
+
+export function ColorModeToggle(props) {
   const { colorMode, toggleColorMode } = useColorMode()
 
+  // The resolved colour mode is only known on the client
   return (
-    <IconButton
-      aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
-      icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-      onClick={toggleColorMode}
-      variant='ghost'
-      size='md'
-      position='fixed'
-      top={4}
-      right={4}
-      zIndex={1000}
-    />
+    <ClientOnly fallback={<Skeleton boxSize='10' />}>
+      <IconButton
+        aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
+        onClick={toggleColorMode}
+        variant='ghost'
+        {...props}
+      >
+        {colorMode === 'light' ? <LuMoon /> : <LuSun />}
+      </IconButton>
+    </ClientOnly>
   )
 }

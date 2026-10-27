@@ -1,6 +1,8 @@
 import { Box, Button, Container, Heading, Stack, Text } from '@chakra-ui/react'
 
-import { Image, Link } from '@/components/mdx'
+import { LuExternalLink } from 'react-icons/lu'
+
+import { Image } from '@/components/mdx'
 
 export const HeroBanner = () => {
   return (
@@ -8,11 +10,11 @@ export const HeroBanner = () => {
       <Container maxW='container.lg' py={24} centerContent>
         <Stack
           align={'center'}
-          spacing={{ base: 8, md: 10 }}
+          gap={{ base: 8, md: 10 }}
           justify={'center'}
           direction={{ base: 'column', md: 'row' }}
         >
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Stack flex={1} gap={{ base: 5, md: 10 }}>
             <Heading
               lineHeight={1.1}
               fontWeight={600}
@@ -44,7 +46,7 @@ export const HeroBanner = () => {
               gridded output from (ocean) circulation models.
             </Text>
           </Stack>
-          <Stack flex={1} spacing={{ base: 10, md: 20 }}>
+          <Stack flex={1} gap={{ base: 10, md: 20 }}>
             <Image
               src={'/homepage-animation_SH.gif'}
               alt='Animation of virtual particles in the global oceans'
@@ -52,18 +54,18 @@ export const HeroBanner = () => {
             ></Image>
 
             <Stack
-              spacing={{ base: 4, sm: 6 }}
+              gap={{ base: 4, sm: 6 }}
               justify={'center'}
               direction={{ base: 'column', sm: 'row' }}
             >
-              <Button
-                useExternalIcon
-                as={Link}
-                variant={'outline'}
-                colorScheme={'blue'}
-                href='https://docs.parcels-code.org'
-              >
-                Get Started
+              <Button variant={'outline'} colorPalette={'blue'} asChild>
+                <a
+                  href='https://docs.parcels-code.org'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Get Started <LuExternalLink />
+                </a>
               </Button>
             </Stack>
           </Stack>
