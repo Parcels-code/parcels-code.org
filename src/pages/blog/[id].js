@@ -130,6 +130,10 @@ export async function getStaticProps({ params }) {
       rehypePlugins: [rehypeSlug, rehypeKatex],
       format: 'mdx',
     },
+    // next-mdx-remote >= 6 strips all JS expressions by default. Posts are
+    // authored in this repo, so allow expressions (e.g. style={{...}}) while
+    // still blocking dangerous ones (blockDangerousJS defaults to true).
+    blockJS: false,
   })
 
   return { props: { source: mdxSource, frontmatter: data, postId: params.id } }
