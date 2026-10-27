@@ -34,7 +34,7 @@
     "framer-motion": "^11.18.2",
     "glob": "^13.0.6",
     "gray-matter": "^4.0.3",
-    "isomorphic-dompurify": "^2.36.0",
+    "isomorphic-dompurify": "~3.19.0",
     "katex": "^0.16.47",
     "next": "^14.2.35",
     "next-mdx-remote": "^5.0.0",
