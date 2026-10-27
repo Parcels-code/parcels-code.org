@@ -8,8 +8,7 @@ on:
 env:
   LINK_TRACKING_ISSUE_NUMBER: 85
 
-permissions:
-  issues: write
+permissions: {}
 
 jobs:
   check-urls:
@@ -17,6 +16,9 @@ jobs:
     env:
       LYCHEE_REPORT_FILE: ./lychee/out.md
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write # Required to update the link tracking issue.
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
