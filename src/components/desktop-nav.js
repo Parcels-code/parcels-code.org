@@ -13,6 +13,10 @@ import {
 } from '@chakra-ui/react'
 
 export const DesktopNav = ({ navItems, ...props }) => {
+  const linkColor = useColorModeValue('gray.600', 'gray.200')
+  const linkHoverColor = useColorModeValue('gray.800', 'white')
+  const popoverContentBgColor = useColorModeValue('white', 'gray.800')
+
   return (
     <Stack direction={'row'} spacing={4} {...props}>
       {navItems.map((navItem) => (
@@ -24,14 +28,12 @@ export const DesktopNav = ({ navItems, ...props }) => {
                 href={navItem.href ?? '/#'}
                 fontSize={'sm'}
                 fontWeight={'bold'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
                 whiteSpace={'nowrap'}
                 flexShrink={0}
-                color={useColorModeValue('gray.600', 'gray.200')}
+                color={linkColor}
                 _hover={{
                   textDecoration: 'none',
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
-                  color: useColorModeValue('gray.800', 'white'),
+                  color: linkHoverColor,
                 }}
               >
                 {navItem.label}
@@ -42,8 +44,7 @@ export const DesktopNav = ({ navItems, ...props }) => {
               <PopoverContent
                 border={0}
                 boxShadow={'xl'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={popoverContentBgColor}
                 p={4}
                 rounded={'xl'}
                 minW={'sm'}

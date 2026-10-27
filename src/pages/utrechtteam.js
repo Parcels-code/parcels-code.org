@@ -33,7 +33,7 @@ const UtrechtTeam = () => {
               <Link href='https://www.uu.nl/en' color='blue.500' isExternal>
                 Utrecht University
               </Link>
-              's Department of Physics, uses the Parcels framework to create and
+              &apos;s Department of Physics, uses the Parcels framework to create and
               analyse simulations of the transport of material (plastics,
               plankton, fish) by ocean currents and its impact on climate and
               marine ecosystems. Within the group, we adhere to Open Science
