@@ -21,10 +21,7 @@ const Accessibility = () => {
             <Text>
               We are committed to making our website accessible to all users.
               Our website has been assessed using the{' '}
-              <Link
-                href='https://wave.webaim.org/extension/'
-                color='blue.500'
-              >
+              <Link href='https://wave.webaim.org/extension/' color='blue.500'>
                 WAVE (Web Accessibility Evaluation Tool)
               </Link>{' '}
               and has been found to have good accessibility features, including

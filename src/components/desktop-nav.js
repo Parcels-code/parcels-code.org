@@ -1,5 +1,13 @@
 import { Link } from '@/components/mdx'
-import { Box, Flex, HoverCard, Icon, Portal, Stack, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  HoverCard,
+  Icon,
+  Portal,
+  Stack,
+  Text,
+} from '@chakra-ui/react'
 import { LuChevronRight } from 'react-icons/lu'
 
 const NavLink = ({ navItem }) => (

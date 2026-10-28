@@ -32,7 +32,8 @@ export const Heading = (props) => (
           outline='none'
           _focus={{
             opacity: 1,
-            outline: '2px solid', outlineColor: 'blue.500',
+            outline: '2px solid',
+            outlineColor: 'blue.500',
           }}
           opacity='0'
           ml='0.375rem'

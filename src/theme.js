@@ -36,7 +36,10 @@ const config = defineConfig({
         // v2's border colour; v3's dark border is barely visible on gray.800
         border: {
           DEFAULT: {
-            value: { _light: '{colors.gray.200}', _dark: '{colors.whiteAlpha.300}' },
+            value: {
+              _light: '{colors.gray.200}',
+              _dark: '{colors.whiteAlpha.300}',
+            },
           },
         },
       },

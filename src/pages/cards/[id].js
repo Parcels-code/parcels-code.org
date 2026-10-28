@@ -71,7 +71,10 @@ const Card = ({ frontmatter, id }) => {
                   <AuthorAvatar
                     key={author.name}
                     author={author}
-                    css={{ '--avatar-size': 'sizes.24', '--avatar-font-size': 'fontSizes.3xl' }}
+                    css={{
+                      '--avatar-size': 'sizes.24',
+                      '--avatar-font-size': 'fontSizes.3xl',
+                    }}
                   />
                 ))}
               </AvatarGroup>

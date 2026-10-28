@@ -31,7 +31,12 @@ export const ProjectCard = ({
     >
       <Link href={repo || homepage}>
         <Card.Body p={0} h='full'>
-          <Stack direction={'column'} justify={'space-between'} h='full' gap={0}>
+          <Stack
+            direction={'column'}
+            justify={'space-between'}
+            h='full'
+            gap={0}
+          >
             <Box>
               <ColorModeImage
                 h={'128px'}

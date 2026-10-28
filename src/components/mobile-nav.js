@@ -1,4 +1,11 @@
-import { Collapsible, Flex, Icon, Stack, Text, useDisclosure } from '@chakra-ui/react'
+import {
+  Collapsible,
+  Flex,
+  Icon,
+  Stack,
+  Text,
+  useDisclosure,
+} from '@chakra-ui/react'
 import { LuChevronDown } from 'react-icons/lu'
 
 import { Link } from '@/components/mdx'
