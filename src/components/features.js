@@ -11,7 +11,7 @@ import React from 'react'
 
 import { Heading } from '@/components/mdx'
 import { Features as data } from '@/data/features'
-import { CheckIcon } from '@chakra-ui/icons'
+import { LuCheck } from 'react-icons/lu'
 
 export const Features = () => {
   const features = React.useMemo(() => data, [])
@@ -27,11 +27,13 @@ export const Features = () => {
           datasets.
         </Text>
 
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8} my={8}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={8} my={8}>
           {features.map((feature, index) => (
             <HStack key={index} align={'top'} my={2}>
               <Box color={'green.400'}>
-                <Icon as={CheckIcon} />
+                <Icon>
+                  <LuCheck />
+                </Icon>
               </Box>
               <VStack align={'start'}>
                 <Text fontWeight={600}>{feature.title}</Text>

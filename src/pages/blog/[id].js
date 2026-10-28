@@ -1,20 +1,17 @@
 import {
-  Avatar,
   Box,
   Button,
   Container,
-  Divider,
-  Flex,
   Heading,
+  Separator,
   Text,
   VStack,
   Wrap,
   WrapItem,
-  useColorMode,
 } from '@chakra-ui/react'
+import { LuArrowLeft } from 'react-icons/lu'
 
-import { ArrowBackIcon } from '@chakra-ui/icons'
-
+import NextLink from 'next/link'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
@@ -26,6 +23,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
 
+import { AuthorAvatar } from '@/components/author-avatar'
 import { Layout } from '@/components/layout'
 import { Link, mapping } from '@/components/mdx'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
@@ -44,47 +42,40 @@ export default function Post({ source, frontmatter, postId }) {
     >
       <Box as={'section'}>
         <Container maxW='container.lg' py={10}>
-          <Box spacing='3' alignItems='start'>
-            <VStack paddingTop='30px' spacing='2' alignItems='center'>
+          <Box alignItems='start'>
+            <VStack paddingTop='30px' gap='2' alignItems='center'>
               <Heading as={'h1'} textAlign={'center'} size='xl' my={4}>
                 {frontmatter.title}
               </Heading>
               <Text
                 fontSize={'sm'}
-                color={
-                  useColorMode().colorMode === 'dark' ? 'gray.300' : 'gray.600'
-                }
+                color={{ base: 'gray.600', _dark: 'gray.300' }}
               >
                 {formatDate(date)} ({distanceToNow(date)})
               </Text>
 
-              <Wrap spacing='20px'>
+              <Wrap gap='20px'>
                 {frontmatter.authors.map((author) => {
                   return (
                     <WrapItem key={author.name}>
-                      <Flex
-                        as={Link}
+                      <Link
                         href={`https://github.com/${author.github}`}
-                        align={'center'}
+                        display={'flex'}
+                        alignItems={'center'}
+                        flexDirection={'column'}
                         my={2}
-                        direction={'column'}
                         _hover={{
                           textDecoration: 'none',
                         }}
                       >
-                        <Avatar
-                          src={`https://github.com/${author.github}.png`}
-                          name={author.name}
-                          my={2}
-                          size={'lg'}
-                        />
+                        <AuthorAvatar author={author} my={2} size={'2xl'} />
                         <Text fontWeight={600}>{author.name}</Text>
-                      </Flex>
+                      </Link>
                     </WrapItem>
                   )
                 })}
               </Wrap>
-              <Divider my={2} />
+              <Separator my={2} />
             </VStack>
             <br></br>
             <MDXRemote
@@ -93,17 +84,12 @@ export default function Post({ source, frontmatter, postId }) {
             />
           </Box>
 
-          <Button
-            my={8}
-            as={Link}
-            href={'/blog'}
-            variant={'outline'}
-            leftIcon={<ArrowBackIcon />}
-            colorScheme={'blue'}
-          >
-            Back to Blog
+          <Button my={8} variant={'outline'} colorPalette={'blue'} asChild>
+            <NextLink href={'/blog'}>
+              <LuArrowLeft /> Back to Blog
+            </NextLink>
           </Button>
-          <Divider my={8} />
+          <Separator my={8} />
           <br />
         </Container>
       </Box>
@@ -130,6 +116,10 @@ export async function getStaticProps({ params }) {
       rehypePlugins: [rehypeSlug, rehypeKatex],
       format: 'mdx',
     },
+    // next-mdx-remote >= 6 strips all JS expressions by default. Posts are
+    // authored in this repo, so allow expressions (e.g. style={{...}}) while
+    // still blocking dangerous ones (blockDangerousJS defaults to true).
+    blockJS: false,
   })
 
   return { props: { source: mdxSource, frontmatter: data, postId: params.id } }

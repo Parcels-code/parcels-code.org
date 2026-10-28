@@ -1,10 +1,10 @@
 import { Image } from '@/components/mdx'
 import { SocialLink } from '@/components/social-link'
-import { useGHUSER } from '@/lib/data-fetching'
-import { Button, Circle, Flex, Card, Stack, Text } from '@chakra-ui/react'
+import { Button, Card, Heading, Stack, Text } from '@chakra-ui/react'
 import { IoIosGlobe, IoLogoGithub, IoLogoTwitter } from 'react-icons/io'
 import { FaResearchgate } from 'react-icons/fa'
 import { FaGoogleScholar } from 'react-icons/fa6'
+
 const SocialLogos = {
   github: IoLogoGithub,
   twitter: IoLogoTwitter,
@@ -13,32 +13,22 @@ const SocialLogos = {
   website: IoIosGlobe,
 }
 
-import {
-  CardBody,
-  ButtonGroup,
-  Divider,
-  CardFooter,
-  Heading,
-} from '@chakra-ui/react'
-
-import { Avatar } from '@chakra-ui/react'
-
 export const TeamMember = ({ member }) => {
   return (
-    <Card maxW='sm'>
-      <CardBody>
+    <Card.Root maxW='sm'>
+      <Card.Body>
         {member.image && (
           <Image src={member.image} alt={member.name} borderRadius='lg' />
         )}
-        <Stack mt='6' spacing='3'>
+        <Stack mt='6' gap='3'>
           <Heading size='md'>{member.name}</Heading>
           <Heading size='sm'>{member.position}</Heading>
           {member.description && <Text>{member.description}</Text>}
         </Stack>
-      </CardBody>
-      <CardFooter>
+      </Card.Body>
+      <Card.Footer>
         {member.links && (
-          <Stack direction={'row'} align='center' spacing={2}>
+          <Stack direction={'row'} align='center' gap={2}>
             {Object.entries(member.links).map(([key, href]) => {
               // Check if the link key exists in SocialLogos
               const LogoComponent = SocialLogos[key]
@@ -62,7 +52,7 @@ export const TeamMember = ({ member }) => {
             })}
           </Stack>
         )}
-      </CardFooter>
-    </Card>
+      </Card.Footer>
+    </Card.Root>
   )
 }

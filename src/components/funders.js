@@ -1,13 +1,5 @@
-import {
-  Box,
-  Container,
-  Image,
-  Text,
-  Link,
-  Grid,
-  GridItem,
-  Tooltip,
-} from '@chakra-ui/react'
+import { Box, Container, Text, Link, Grid, GridItem } from '@chakra-ui/react'
+import { Tooltip } from '@/components/ui/tooltip'
 import { ColorModeImage } from '@/components/ColorModeImage'
 import React from 'react'
 import { Funders as data } from '@/data/funders'
@@ -36,10 +28,8 @@ export const Funders = () => {
             justifyContent='center'
           >
             {funders.map((funder, index) => (
-              <Tooltip key={index} label={funder.name}>
+              <Tooltip key={index} content={funder.name}>
                 <GridItem
-                  as={Link}
-                  href={funder.url}
                   display='flex'
                   alignItems='center'
                   justifyContent='center'
@@ -47,13 +37,16 @@ export const Funders = () => {
                     index < funders.length - 1 ? '1px solid #ccc' : 'none'
                   }
                   pr={4}
+                  asChild
                 >
-                  <ColorModeImage
-                    lightSrc={funder.logo_light}
-                    darkSrc={funder.logo_dark}
-                    maxH={20}
-                    alt={funder.name}
-                  />
+                  <Link href={funder.url}>
+                    <ColorModeImage
+                      lightSrc={funder.logo_light}
+                      darkSrc={funder.logo_dark}
+                      maxH={20}
+                      alt={funder.name}
+                    />
+                  </Link>
                 </GridItem>
               </Tooltip>
             ))}

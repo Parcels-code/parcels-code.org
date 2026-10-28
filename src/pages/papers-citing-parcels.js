@@ -10,7 +10,7 @@ const HowToCite = () => {
         The preferred way to cite the latest version of Parcels in your
         publications is to use the following reference:
       </Text>
-      <Accordion allowMultiple>
+      <Accordion.Root multiple collapsible>
         <Paper
           key='The Parcels v2.0 Lagrangian framework: new field interpolation schemes'
           published_info='Geoscientific Model Development, 12, 3571-3584'
@@ -19,9 +19,9 @@ const HowToCite = () => {
           doi='https://doi.org/10.5194/gmd-12-3571-2019'
           abstract="With the increasing amount of data produced by numerical ocean models, so increases the need for efficient tools to analyse these data. One of these tools is Lagrangian ocean analysis, where a set of virtual particles are released and their dynamics is integrated in time based on fields defining the ocean state, including the hydrodynamics and biogeochemistry if available. This popular methodology needs to adapt to the large variety of models producing these fields at different formats. This is precisely the aim of Parcels, a Lagrangian ocean analysis framework designed to combine (1) a wide flexibility to model particles of different natures and (2) an efficient implementation in accordance with modern computing infrastructure. In the new Parcels v2.0, we implement a set of interpolation schemes to read various types of discretised fields, from rectilinear to curvilinear grids in the horizontal direction, from z- to s- levels in the vertical and different variable distributions such as the Arakawa's A-, B- and C- grids. In particular, we develop a new interpolation scheme for a three-dimensional curvilinear C-grid and analyse its properties. Parcels v2.0 capabilities, including a suite of meta-field objects, are then illustrated in a brief study of the distribution of floating microplastic in the North West European continental shelf and its sensitivity to different physical processes."
         />
-      </Accordion>
+      </Accordion.Root>
       <Text mt={8}>Other papers that provide details about Parcels are:</Text>
-      <Accordion allowMultiple>
+      <Accordion.Root multiple collapsible>
         <Paper
           key='Parcels v0.9: prototyping a Lagrangian Ocean Analysis framework for the petascale age'
           published_info='Geoscientific Model Development, 10, 4175-4186'
@@ -38,7 +38,7 @@ const HowToCite = () => {
           doi='https://doi.org/10.1016/j.cageo.2023.105322'
           abstract='Studying oceanography by using Lagrangian simulations has been adopted for a range of scenarios, such as the determining the fate of microplastics in the ocean, simulating the origin locations of microplankton used for palaeoceanographic reconstructions, and for studying the impact of fish aggregation devices on the migration behaviour of tuna. These simulations are complex and represent a considerable runtime effort to obtain trajectory results, which is the prime motivation for enhancing the performance of Lagrangian particle simulators. This paper assesses established performance enhancing techniques from Eulerian simulators in light of computational conditions and demands of Lagrangian simulators. A performance enhancement strategy specifically targeting physics-based Lagrangian particle simulations is outlined to address the performance gaps, and techniques for closing the performance gap are presented and implemented. Realistic experiments are derived from three specific oceanographic application scenarios, and the suggested performance-enhancing techniques are benchmarked in detail, so to allow for a good attribution of speed-up measurements to individual techniques. The impacts and insights of the performance enhancement strategy are further discussed for Lagrangian simulations in other geoscience applications. The experiments show that I/O-enhancing techniques, such as dynamic loading and buffering, lead to considerable speed-up on-par with an idealised parallelisation of the process over 20 nodes. Conversely, while the cache-efficient structure-of-arrays collection yields a visible speed-up, other alternative data structures fail in fulfilling the theoretically-expected performance increase. This insight demonstrates the importance of good data alignment in memory and caches for Lagrangian physics simulations.'
         />
-      </Accordion>
+      </Accordion.Root>
     </Box>
   )
 }
@@ -65,7 +65,7 @@ const PapersCitingParcels = () => {
             Peer-reviewed papers using Parcels
           </Heading>
 
-          <Accordion allowMultiple>
+          <Accordion.Root multiple collapsible>
             {papersCitingParcels.reverse().map((paper, index, array) => (
               <Paper
                 key={paper.title}
@@ -77,7 +77,7 @@ const PapersCitingParcels = () => {
                 number={array.length - index}
               />
             ))}
-          </Accordion>
+          </Accordion.Root>
         </Container>
       </Box>
     </Layout>

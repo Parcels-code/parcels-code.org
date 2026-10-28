@@ -18,8 +18,12 @@ export const mapping = {
   hr: (props) => <Hr {...props} />,
   a: (props) => <Link color={'blue.400'} {...props} />,
   p: (props) => <Text as='p' my={4} lineHeight='tall' {...props} />,
-  ul: (props) => <Box as='ul' pt={2} pl={4} ml={2} {...props} />,
-  ol: (props) => <Box as='ol' pt={2} pl={4} ml={2} {...props} />,
+  ul: (props) => (
+    <Box as='ul' listStyleType='disc' pt={2} pl={4} ml={2} {...props} />
+  ),
+  ol: (props) => (
+    <Box as='ol' listStyleType='decimal' pt={2} pl={4} ml={2} {...props} />
+  ),
   li: (props) => <Box as='li' pb={1} {...props} />,
   blockquote: (props) => <Quote {...props} />,
   img: (props) => <Image {...props} alt={props.alt} />,

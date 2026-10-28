@@ -21,11 +21,7 @@ const Accessibility = () => {
             <Text>
               We are committed to making our website accessible to all users.
               Our website has been assessed using the{' '}
-              <Link
-                href='https://wave.webaim.org/extension/'
-                color='blue.500'
-                isExternal
-              >
+              <Link href='https://wave.webaim.org/extension/' color='blue.500'>
                 WAVE (Web Accessibility Evaluation Tool)
               </Link>{' '}
               and has been found to have good accessibility features, including
@@ -36,7 +32,6 @@ const Accessibility = () => {
               <Link
                 href={'https://www.uu.nl/staff/EvanSebille'}
                 color='blue.500'
-                isExternal
               >
                 Erik van Sebille
               </Link>{' '}

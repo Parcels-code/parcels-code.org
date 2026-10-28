@@ -1,7 +1,7 @@
 import { Link } from '@/components/mdx'
 import { Icon, VisuallyHidden } from '@chakra-ui/react'
 
-export const SocialLink = ({ icon, href, label }) => {
+export const SocialLink = ({ icon: IconComponent, href, label }) => {
   return (
     <Link
       display='inline-flex'
@@ -9,10 +9,11 @@ export const SocialLink = ({ icon, href, label }) => {
       justifyContent='center'
       rounded='full'
       href={href}
-      isExternal
     >
       <VisuallyHidden>{label}</VisuallyHidden>
-      <Icon as={icon} fontSize='xl' color='accent' />
+      <Icon fontSize='xl' color='accent'>
+        <IconComponent />
+      </Icon>
     </Link>
   )
 }

@@ -1,10 +1,11 @@
-import { Divider, useColorMode } from '@chakra-ui/react'
+import { Separator } from '@chakra-ui/react'
 
 export const Hr = () => {
-  const { colorMode } = useColorMode()
-  const borderColor = {
-    light: 'gray.200',
-    dark: 'gray.600',
-  }
-  return <Divider borderColor={borderColor[colorMode]} my={4} w='100%' />
+  return (
+    <Separator
+      borderColor={{ base: 'gray.200', _dark: 'gray.600' }}
+      my={4}
+      w='100%'
+    />
+  )
 }

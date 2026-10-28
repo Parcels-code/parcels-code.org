@@ -1,61 +1,66 @@
 import { Link } from '@/components/mdx'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
   Box,
   Flex,
+  HoverCard,
   Icon,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
+  Portal,
   Stack,
   Text,
-  useColorModeValue,
 } from '@chakra-ui/react'
+import { LuChevronRight } from 'react-icons/lu'
+
+const NavLink = ({ navItem }) => (
+  <Link
+    p={2}
+    href={navItem.href ?? '/#'}
+    fontSize={'sm'}
+    fontWeight={'bold'}
+    whiteSpace={'nowrap'}
+    flexShrink={0}
+    color={{ base: 'gray.600', _dark: 'gray.200' }}
+    _hover={{
+      textDecoration: 'none',
+      color: { base: 'gray.800', _dark: 'white' },
+    }}
+  >
+    {navItem.label}
+  </Link>
+)
 
 export const DesktopNav = ({ navItems, ...props }) => {
   return (
-    <Stack direction={'row'} spacing={4} {...props}>
+    <Stack direction={'row'} gap={4} {...props}>
       {navItems.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={'hover'} placement={'bottom-start'}>
-            <PopoverTrigger>
-              <Link
-                p={2}
-                href={navItem.href ?? '/#'}
-                fontSize={'sm'}
-                fontWeight={'bold'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                whiteSpace={'nowrap'}
-                flexShrink={0}
-                color={useColorModeValue('gray.600', 'gray.200')}
-                _hover={{
-                  textDecoration: 'none',
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
-                  color: useColorModeValue('gray.800', 'white'),
-                }}
-              >
-                {navItem.label}
-              </Link>
-            </PopoverTrigger>
-
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={'xl'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                bg={useColorModeValue('white', 'gray.800')}
-                p={4}
-                rounded={'xl'}
-                minW={'sm'}
-              >
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
-            )}
-          </Popover>
+          {navItem.children ? (
+            // v2's hover-triggered Popover is a HoverCard in v3
+            <HoverCard.Root positioning={{ placement: 'bottom-start' }}>
+              <HoverCard.Trigger asChild>
+                <NavLink navItem={navItem} />
+              </HoverCard.Trigger>
+              <Portal>
+                <HoverCard.Positioner>
+                  <HoverCard.Content
+                    border={0}
+                    boxShadow={'xl'}
+                    bg={{ base: 'white', _dark: 'gray.800' }}
+                    p={4}
+                    rounded={'xl'}
+                    minW={'sm'}
+                  >
+                    <Stack>
+                      {navItem.children.map((child) => (
+                        <DesktopSubNav key={child.label} {...child} />
+                      ))}
+                    </Stack>
+                  </HoverCard.Content>
+                </HoverCard.Positioner>
+              </Portal>
+            </HoverCard.Root>
+          ) : (
+            <NavLink navItem={navItem} />
+          )}
         </Box>
       ))}
     </Stack>
@@ -66,11 +71,11 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Link
       href={href ?? '#'}
-      role={'group'}
+      className='group'
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+      _hover={{ bg: { base: 'blue.50', _dark: 'gray.900' } }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
@@ -92,7 +97,9 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           align={'center'}
           flex={1}
         >
-          <Icon color={'blue.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={'blue.400'} w={5} h={5}>
+            <LuChevronRight />
+          </Icon>
         </Flex>
       </Stack>
     </Link>

@@ -1,13 +1,4 @@
-import {
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
-  Text,
-  Link,
-  Stack,
-} from '@chakra-ui/react'
+import { Accordion, Box, Text, Link, Stack } from '@chakra-ui/react'
 
 export const Paper = ({
   title,
@@ -18,16 +9,17 @@ export const Paper = ({
   number,
 }) => {
   return (
-    <AccordionItem
+    <Accordion.Item
+      value={title}
       my={4}
       borderWidth={1}
-      borderColor='gray.200'
+      borderColor={{ base: 'gray.200', _dark: 'gray.700' }}
       borderRadius='md'
       overflow='hidden'
     >
       <h2>
-        <AccordionButton>
-          <AccordionIcon mx={8} />
+        <Accordion.ItemTrigger px={4} py={2} cursor='pointer'>
+          <Accordion.ItemIndicator mx={8} />
           <Stack direction='column'>
             <Box as='b' textAlign='left'>
               {title}
@@ -40,7 +32,8 @@ export const Paper = ({
               textAlign='left'
               href={doi}
               color='blue.500'
-              isExternal
+              target='_blank'
+              rel='noopener noreferrer'
               onClick={(e) => {
                 e.stopPropagation()
               }}
@@ -53,11 +46,13 @@ export const Paper = ({
               </Box>
             )}
           </Stack>
-        </AccordionButton>
+        </Accordion.ItemTrigger>
       </h2>
-      <AccordionPanel pb={4}>
-        <Text>{abstract}</Text>
-      </AccordionPanel>
-    </AccordionItem>
+      <Accordion.ItemContent>
+        <Accordion.ItemBody px={4} pb={4}>
+          <Text>{abstract}</Text>
+        </Accordion.ItemBody>
+      </Accordion.ItemContent>
+    </Accordion.Item>
   )
 }
