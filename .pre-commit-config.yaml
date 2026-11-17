@@ -20,7 +20,7 @@ repos:
         args: ['--offline']
 
   - repo: https://github.com/rbubley/mirrors-prettier # Update mirror as official mirror is deprecated
-    rev: v3.9.10
+    rev: v3.10.1
     hooks:
       - id: prettier
         exclude: \.html$
@@ -36,7 +36,7 @@ repos:
           |yaml|yml\
           )$"
   - repo: https://github.com/rbubley/mirrors-prettier # Update mirror as official mirror is deprecated
-    rev: v3.9.10
+    rev: v3.10.1
     hooks:
       - id: prettier
 
